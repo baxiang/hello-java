@@ -1,0 +1,21 @@
+# 忽略文件
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+.settings/
+.project
+.classpath
+target/
+build/
+dist/
+*.swp
+*.swo
+*~
+.DS_Store
