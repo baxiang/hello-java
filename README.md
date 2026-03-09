@@ -37,57 +37,166 @@ hello-java/
 ## 📋 课程大纲
 
 ### 第一部分：Java 基础语法（第 1-6 章）
-- Java 入门、变量与数据类型、运算符、流程控制、数组、方法
+
+```
+01-java-base/
+├── ch01-intro/           # Java 入门
+├── ch02-variable/        # 变量与数据类型
+├── ch03-operator/        # 运算符
+├── ch04-flow-control/    # 流程控制
+├── ch05-array/           # 数组
+└── ch06-method/          # 方法
+```
 
 ### 第二部分：面向对象编程（第 7-11 章）
-- 类与对象、继承与多态、抽象类与接口、常用关键字、Object 类
+
+```
+02-oop/
+├── ch07-class-object/           # 类与对象
+├── ch08-inheritance-polymorphism/ # 继承与多态
+├── ch09-abstract-interface/     # 抽象类与接口
+├── ch10-keywords/               # 常用关键字
+└── ch11-object-class/           # Object 类
+```
 
 ### 第三部分：Java 核心 API（第 12-16 章）
-- 字符串处理、包装类、日期时间 API、正则表达式、枚举与注解
+
+```
+03-core-api/
+├── ch12-string/           # 字符串处理
+├── ch13-wrapper-math/     # 包装类与数学类
+├── ch14-datetime/         # 日期与时间 API
+├── ch15-regex/            # 正则表达式
+└── ch16-enum-annotation/  # 枚举与注解
+```
 
 ### 第四部分：集合框架（第 17-22 章）
-- 集合框架概述、List、Set、Map、Collections 工具类、泛型进阶
+
+```
+04-collection/
+├── ch17-collection-overview/  # 集合框架概述
+├── ch18-list/                 # List 集合
+├── ch19-set/                  # Set 集合
+├── ch20-map/                  # Map 集合
+├── ch21-collections/          # Collections 工具类
+└── ch22-advanced/             # 高级集合特性
+```
 
 ### 第五部分：异常处理与 IO（第 23-25 章）
-- 异常处理、File 类、IO 流
+
+```
+05-exception-io/
+├── ch23-exception/     # 异常处理
+├── ch24-file/          # File 类
+└── ch25-io-stream/     # IO 流
+```
 
 ### 第六部分：多线程与并发（第 26-30 章）
-- 线程基础、线程安全、线程通信、线程池、并发编程进阶
+
+```
+06-concurrency/
+├── ch26-thread-base/        # 线程基础
+├── ch27-thread-safe/        # 线程安全
+├── ch28-thread-communication/ # 线程通信
+├── ch29-thread-pool/        # 线程池
+└── ch30-advanced/           # 并发编程进阶
+```
 
 ### 第七部分：Java 8+ 新特性（第 31-34 章）
-- Lambda 表达式、Stream API、Optional 类、其他新特性
+
+```
+07-java8/
+├── ch31-lambda/           # Lambda 表达式
+├── ch32-stream/           # Stream API
+├── ch33-optional/         # Optional 类
+└── ch34-other-features/   # 其他新特性
+```
 
 ### 第八部分：开发工具与构建（第 35-37 章）
-- Maven、Git 版本控制、IDEA 高级技巧
+
+```
+08-tools/
+├── ch35-maven/     # Maven
+├── ch36-git/       # Git 版本控制
+└── ch37-idea/      # IDEA 高级技巧
+```
 
 ### 第九部分：数据库与 JDBC（第 38-39 章）
-- MySQL 基础、JDBC
+
+```
+09-database/
+├── ch38-mysql/     # MySQL 基础
+└── ch39-jdbc/      # JDBC
+```
 
 ### 第十部分：Web 开发基础（第 40-42 章）
-- 前端基础、Servlet、Tomcat 服务器
+
+```
+10-web/
+├── ch40-frontend/     # 前端基础
+├── ch41-servlet/      # Servlet
+└── ch42-tomcat/       # Tomcat 服务器
+```
 
 ### 第十一部分：Spring Framework（第 43-48 章）
-- Spring 概述、IoC 容器、AOP、事务管理、数据访问、Spring MVC
+
+```
+11-spring/
+├── ch43-spring-intro/     # Spring 概述
+├── ch44-ioc/              # IoC 容器
+├── ch45-aop/              # AOP 面向切面编程
+├── ch46-transaction/      # Spring 事务管理
+├── ch47-data-access/      # Spring 数据访问
+└── ch48-spring-mvc/       # Spring MVC
+```
 
 ### 第十二部分：Spring Boot（第 49-58 章）
-- Spring Boot 入门、配置文件、Web 开发、数据访问、Redis、消息队列、定时任务、安全框架、测试、部署与监控
+
+```
+12-spring-boot/
+├── ch49-spring-boot-intro/    # Spring Boot 入门
+├── ch50-config/               # 配置文件
+├── ch51-web/                  # Web 开发
+├── ch52-data-access/          # 数据访问
+├── ch53-redis/                # Redis 整合
+├── ch54-mq/                   # 消息队列
+├── ch55-schedule/             # 定时任务
+├── ch56-security/             # 安全框架
+├── ch57-test/                 # 测试
+└── ch58-deploy/               # 部署与监控
+```
 
 ### 第十三部分：Spring Cloud 微服务（第 59-68 章）
-- 微服务架构概述、服务注册与发现、负载均衡、服务调用、熔断降级、API 网关、配置中心、链路追踪、消息驱动、分布式事务
+
+```
+13-spring-cloud/
+├── ch59-microservice-intro/     # 微服务架构概述
+├── ch60-nacos-eureka/           # 服务注册与发现
+├── ch61-loadbalancer/           # 负载均衡
+├── ch62-openfeign/              # 服务调用
+├── ch63-sentinel-hystrix/       # 服务熔断与降级
+├── ch64-gateway/                # API 网关
+├── ch65-nacos-config/           # 配置中心
+├── ch66-sleuth-zipkin/          # 链路追踪
+├── ch67-stream/                 # 消息驱动
+└── ch68-seata/                  # 分布式事务
+```
 
 ### 第十四部分：项目实战（第 69-78 章）
-| 项目 | 名称 | 技术栈 |
-|------|------|--------|
-| 69 | 博客系统 | Spring Boot + JWT + MyBatis |
-| 70 | 在线商城系统 | Spring Boot + Redis + Elasticsearch |
-| 71 | 企业级 OA 系统 | Spring Security + RBAC |
-| 72 | 秒杀系统 | Redis + RabbitMQ + Sentinel |
-| 73 | 分布式外卖平台 | Spring Cloud Alibaba |
-| 74 | 数据可视化大屏 | WebSocket + Redis |
-| 75 | 在线考试系统 | 自动组卷 + 防作弊 |
-| 76 | 内容管理系统 CMS | 模板引擎 + 静态化 |
-| 77 | 项目通用技能 | 代码规范 + 接口文档 |
-| 78 | DevOps 与部署 | Docker + CI/CD |
+
+```
+14-project/
+├── ch69-blog/             # 博客系统
+├── ch70-mall/             # 在线商城系统
+├── ch71-oa/               # 企业级 OA 系统
+├── ch72-seckill/          # 秒杀系统
+├── ch73-takeout/          # 分布式外卖平台
+├── ch74-dashboard/        # 数据可视化大屏系统
+├── ch75-exam/             # 在线考试系统
+├── ch76-cms/              # 内容管理系统
+├── ch77-common-skills/    # 项目通用技能
+└── ch78-devops/           # DevOps 与部署
+```
 
 ## 🎯 学习建议
 
