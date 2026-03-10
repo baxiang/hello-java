@@ -54,11 +54,11 @@
 
 ```bash
 # 1. 使用 Homebrew 安装（推荐）
-brew install openjdk@17
+brew install openjdk@21
 
 # 2. 配置环境变量
 # 在 ~/.zshrc 或 ~/.bash_profile 中添加：
-export JAVA_HOME=/opt/homebrew/opt/openjdk@17
+export JAVA_HOME=/opt/homebrew/opt/openjdk@21
 export PATH=$JAVA_HOME/bin:$PATH
 
 # 3. 验证安装
@@ -71,7 +71,7 @@ javac -version
 1. 下载 JDK 安装包（.exe）
 2. 双击运行，选择安装路径
 3. 配置环境变量：
-   - 新建 `JAVA_HOME` = `C:\Program Files\Java\jdk-17`
+   - 新建 `JAVA_HOME` = `C:\Program Files\Java\jdk-21`
    - 编辑 `Path`，添加 `%JAVA_HOME%\bin`
 4. 打开 cmd 验证：
    ```cmd
@@ -84,10 +84,10 @@ javac -version
 ```bash
 # Ubuntu/Debian
 sudo apt update
-sudo apt install openjdk-17-jdk
+sudo apt install openjdk-21-jdk
 
 # CentOS/RHEL
-sudo yum install java-17-openjdk-devel
+sudo yum install java-21-openjdk-devel
 
 # 验证
 java -version
@@ -110,9 +110,9 @@ echo %JAVA_HOME% # Windows
 
 **输出示例**：
 ```
-java version "17.0.1" 2021-10-19 LTS
-Java(TM) SE Runtime Environment (build 17.0.1+12-LTS-39)
-Java HotSpot(TM) 64-Bit Server VM (build 17.0.1+12-LTS-39, mixed mode, sharing)
+java version "21.0.2" 2024-01-16 LTS
+Java(TM) SE Runtime Environment (build 21.0.2+13-LTS)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.2+13-LTS, mixed mode, sharing)
 ```
 
 ## 四、常用开发工具
@@ -159,7 +159,7 @@ sudo update-alternatives --config java
 1. **JDK** = JRE + 开发工具，开发者必装
 2. **JRE** = JVM + 类库，用于运行程序
 3. **JVM** = 虚拟机，实现跨平台
-4. 推荐安装 Java 17 LTS 版本
+4. 推荐安装 Java 21 LTS 版本
 
 ## 七、练习题
 
