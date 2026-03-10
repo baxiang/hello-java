@@ -40,7 +40,7 @@ Spring Boot（简化配置和部署）
 **项目配置**：
 - Project: Maven
 - Language: Java
-- Spring Boot: 2.7.x 或 3.x
+- Spring Boot: 3.4.x
 - Group: com.example
 - Artifact: demo
 - Dependencies: Spring Web
@@ -75,7 +75,7 @@ demo/
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.14</version>
+        <version>3.4.0</version>
     </parent>
     
     <groupId>com.example</groupId>
