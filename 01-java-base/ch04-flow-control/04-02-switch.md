@@ -396,7 +396,7 @@ public class SwitchExample {
         
         // 2. 月份天数
         int month = 2;
-        int year = 2024;
+        int year = 2026;
         
         int days = switch (month) {
             case 1, 3, 5, 7, 8, 10, 12 -> 31;
