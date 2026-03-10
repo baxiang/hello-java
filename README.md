@@ -98,13 +98,14 @@ hello-java/
 - 第 41 章：Servlet
 - 第 42 章：Tomcat 服务器
 
-#### 第十一部分：Spring Framework（11-spring，第 43-48 章，6 节）✅
+#### 第十一部分：Spring Framework（11-spring，第 43-49 章，8 节）✅
 - 第 43 章：Spring 概述
 - 第 44 章：IoC 容器
 - 第 45 章：AOP 面向切面编程
 - 第 46 章：Spring 事务管理
 - 第 47 章：Spring 数据访问
 - 第 48 章：Spring MVC
+- 第 49 章：Spring 源码解读（IOC、AOP）
 
 #### 第十二部分：Spring Boot（12-spring-boot，第 49-58 章，10 节）✅
 - 第 49 章：Spring Boot 入门
