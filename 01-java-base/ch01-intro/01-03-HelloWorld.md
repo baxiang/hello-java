@@ -139,7 +139,7 @@ public class Hello {
 # 错误：找不到或无法加载主类
 java HelloWorld  # 确保已编译且类名正确
 
-# 错误：需要 Java SE 17
+# 错误：需要 Java SE 21
 # 原因：JDK 版本不匹配，检查 JAVA_HOME
 ```
 
