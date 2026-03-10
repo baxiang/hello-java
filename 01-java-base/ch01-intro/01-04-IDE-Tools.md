@@ -67,7 +67,7 @@ Cmd + N           Alt + Insert       生成代码（Getter/Setter 等）
 1. **File** → **New** → **Project**
 2. 选择 **New Project**
 3. 输入项目名称：`hello-java`
-4. 选择 JDK 版本
+4. 选择 JDK 版本（推荐 Java 21）
 5. 点击 **Create**
 
 ### 2.2 创建类
