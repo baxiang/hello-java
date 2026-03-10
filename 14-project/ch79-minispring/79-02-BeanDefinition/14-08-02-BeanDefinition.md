@@ -1,8 +1,8 @@
-# 79.2 IOC 容器实现
+# 79.2 BeanDefinition 和 Bean 注册
 
 ## 一、BeanDefinition 定义
 
-BeanDefinition 存储 Bean 的元数据信息。
+BeanDefinition 存储 Bean 的元数据信息，是 Spring 容器管理 Bean 的基础。
 
 ```java
 package com.example.minispring.beans.config;
@@ -17,12 +17,6 @@ public class BeanDefinition {
     
     // Bean 的作用域（singleton/prototype）
     private String scope = "singleton";
-    
-    // 构造参数
-    private Object[] constructorArgs;
-    
-    // 属性值
-    private PropertyValues propertyValues = new PropertyValues();
     
     public BeanDefinition() {
     }
@@ -58,9 +52,14 @@ public class BeanDefinition {
 }
 ```
 
+**核心要点**：
+- `beanClass`：Bean 的类型
+- `scope`：作用域（单例/原型）
+- 后续可扩展：构造参数、属性值、初始化方法等
+
 ## 二、PropertyValues 属性值
 
-存储 Bean 的属性值。
+存储 Bean 的属性值，用于依赖注入。
 
 ```java
 package com.example.minispring.beans.config;
@@ -118,7 +117,7 @@ public class PropertyValue {
 
 ## 三、BeanFactory 接口
 
-IOC 容器的核心接口。
+BeanFactory 是 IOC 容器的核心接口，定义了获取 Bean 的方法。
 
 ```java
 package com.example.minispring.beans.factory;
@@ -157,99 +156,32 @@ public interface BeanFactory {
 }
 ```
 
-## 四、单例 Bean 注册表
+**方法说明**：
+- `getBean(name)`：根据名称获取 Bean
+- `getBean(name, type)`：根据名称和类型获取 Bean
+- `containsBean(name)`：检查是否包含 Bean
+- `isSingleton(name)`：是否是单例
 
-使用三级缓存解决循环依赖。
+## 四、Bean 注册表
 
-```java
-package com.example.minispring.beans.factory.support;
-
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
-/**
- * 单例 Bean 注册表：存储单例 Bean 实例
- */
-public class DefaultSingletonBeanRegistry {
-    
-    /** 一级缓存：完整的单例 Bean */
-    private final Map<String, Object> singletonObjects = new ConcurrentHashMap<>();
-    
-    /** 二级缓存：早期 Bean 引用（未填充属性） */
-    private final Map<String, Object> earlySingletonObjects = new ConcurrentHashMap<>();
-    
-    /**
-     * 获取单例 Bean
-     */
-    public Object getSingleton(String beanName) {
-        Object singletonObject = singletonObjects.get(beanName);
-        if (singletonObject == null) {
-            singletonObject = earlySingletonObjects.get(beanName);
-        }
-        return singletonObject;
-    }
-    
-    /**
-     * 注册单例 Bean
-     */
-    public void addSingleton(String beanName, Object singletonObject) {
-        singletonObjects.put(beanName, singletonObject);
-        earlySingletonObjects.remove(beanName);
-    }
-    
-    /**
-     * 添加早期 Bean 引用
-     */
-    public void addEarlyBean(String beanName, Object singletonObject) {
-        earlySingletonObjects.put(beanName, singletonObject);
-    }
-}
-```
-
-## 五、AbstractBeanFactory 抽象类
-
-实现 BeanFactory 接口的公共逻辑。
+实现 BeanDefinition 的注册和管理。
 
 ```java
 package com.example.minispring.beans.factory.support;
 
 import com.example.minispring.beans.config.BeanDefinition;
-import com.example.minispring.beans.exception.BeansException;
-import com.example.minispring.beans.factory.BeanFactory;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Bean 工厂抽象类：实现 BeanFactory 接口的公共逻辑
+ * Bean 定义注册表
  */
-public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry 
-        implements BeanFactory {
+public class DefaultListableBeanFactory {
     
     /** Bean 定义注册表 */
     private final Map<String, BeanDefinition> beanDefinitionMap = 
         new ConcurrentHashMap<>();
-    
-    @Override
-    public Object getBean(String name) throws BeansException {
-        return doGetBean(name);
-    }
-    
-    @Override
-    public <T> T getBean(String name, Class<T> requiredType) throws BeansException {
-        return (T) getBean(name);
-    }
-    
-    @Override
-    public boolean containsBean(String name) {
-        return containsBeanDefinition(name);
-    }
-    
-    @Override
-    public boolean isSingleton(String name) {
-        BeanDefinition bd = getBeanDefinition(name);
-        return bd.isSingleton();
-    }
     
     /**
      * 注册 Bean 定义
@@ -258,42 +190,30 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry
         beanDefinitionMap.put(beanName, beanDefinition);
     }
     
+    /**
+     * 获取 Bean 定义
+     */
     public BeanDefinition getBeanDefinition(String beanName) {
         return beanDefinitionMap.get(beanName);
     }
     
+    /**
+     * 是否包含 Bean 定义
+     */
     public boolean containsBeanDefinition(String beanName) {
         return beanDefinitionMap.containsKey(beanName);
     }
     
     /**
-     * 获取 Bean 的核心方法
+     * 获取所有 Bean 名称
      */
-    protected Object doGetBean(String name) {
-        // 1. 尝试从缓存获取
-        Object sharedInstance = getSingleton(name);
-        if (sharedInstance != null) {
-            return sharedInstance;
-        }
-        
-        // 2. 缓存中没有，创建 Bean
-        BeanDefinition bd = getBeanDefinition(name);
-        Object bean = createBean(name, bd);
-        
-        // 3. 注册到缓存
-        addSingleton(name, bean);
-        
-        return bean;
+    public String[] getBeanDefinitionNames() {
+        return beanDefinitionMap.keySet().toArray(new String[0]);
     }
-    
-    /**
-     * 创建 Bean（由子类实现）
-     */
-    protected abstract Object createBean(String name, BeanDefinition bd);
 }
 ```
 
-## 六、测试代码
+## 五、测试代码
 
 ```java
 package com.example.minispring.test;
@@ -301,38 +221,49 @@ package com.example.minispring.test;
 import com.example.minispring.beans.config.BeanDefinition;
 import com.example.minispring.beans.factory.support.DefaultListableBeanFactory;
 
-public class MiniSpringTest {
+public class BeanDefinitionTest {
     
     public static void main(String[] args) {
         // 1. 创建 Bean 工厂
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
         
-        // 2. 注册 Bean 定义
+        // 2. 创建 Bean 定义
         BeanDefinition bd = new BeanDefinition(UserService.class);
+        bd.setScope("singleton");
+        
+        // 3. 注册 Bean 定义
         factory.registerBeanDefinition("userService", bd);
         
-        // 3. 获取 Bean
-        UserService userService = (UserService) factory.getBean("userService");
+        // 4. 验证注册
+        System.out.println("包含 userService: " + 
+            factory.containsBeanDefinition("userService"));
         
-        // 4. 使用 Bean
-        userService.sayHello();
+        // 5. 获取 Bean 定义
+        BeanDefinition retrieved = factory.getBeanDefinition("userService");
+        System.out.println("Bean 类型：" + retrieved.getBeanClass().getName());
+        System.out.println("作用域：" + retrieved.getScope());
     }
 }
 
 class UserService {
     public void sayHello() {
-        System.out.println("Hello, Mini-Spring!");
+        System.out.println("Hello!");
     }
 }
 ```
 
-## 七、小结
+## 六、小结
 
-1. **BeanDefinition**：存储 Bean 元数据
-2. **BeanFactory**：IOC 容器核心接口
-3. **三级缓存**：解决循环依赖
-4. **AbstractBeanFactory**：实现公共逻辑
+1. **BeanDefinition**：存储 Bean 元数据（类、作用域）
+2. **PropertyValues**：存储属性值，用于依赖注入
+3. **BeanFactory**：IOC 容器核心接口
+4. **Bean 注册表**：管理 BeanDefinition 的注册和查询
+
+## 七、下一步
+
+下一节将实现**单例 Bean 注册表**，学习如何存储和管理单例 Bean 实例。
 
 ---
 
-[上一节：79.1 项目概述](../79-01-项目概述/14-08-01-项目概述.md) | [下一节：79.3 Bean 实例化](../79-03-Bean 实例化/14-08-03-Bean 实例化.md)
+[上一节：79.1 项目概述](../79-01-项目概述/14-08-01-项目概述.md) | 
+[下一节：79.3 单例 Bean 注册表](../79-03-单例注册表/14-08-03-单例注册表.md)
