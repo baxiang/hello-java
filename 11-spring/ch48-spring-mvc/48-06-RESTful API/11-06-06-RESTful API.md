@@ -164,48 +164,6 @@ public class UserController {
 | @RestController | 返回 JSON | - |
 | @RequestBody | 接收 JSON | - |
 | @ResponseBody | 返回 JSON | - |
-
-## 七、动手练习
-
-创建一个完整的 RESTful API：
-
-```java
-@RestController
-@RequestMapping("/api/users")
-public class UserController {
-    
-    @Autowired
-    private UserService userService;
-    
-    @GetMapping
-    public Result<List<User>> list() {
-        return Result.success(userService.list());
-    }
-    
-    @GetMapping("/{id}")
-    public Result<User> get(@PathVariable Long id) {
-        return Result.success(userService.get(id));
-    }
-    
-    @PostMapping
-    public Result<User> create(@RequestBody User user) {
-        return Result.success(userService.save(user));
-    }
-    
-    @PutMapping("/{id}")
-    public Result<User> update(@PathVariable Long id, 
-                               @RequestBody User user) {
-        return Result.success(userService.update(id, user));
-    }
-    
-    @DeleteMapping("/{id}")
-    public Result<Void> delete(@PathVariable Long id) {
-        userService.delete(id);
-        return Result.success(null);
-    }
-}
-```
-
 ---
 
 [上一节：48.5 视图解析](./48-05-视图解析/11-06-05-视图解析.md) | 
@@ -220,7 +178,3 @@ public class UserController {
 4. 数据绑定
 5. 视图解析
 6. RESTful API 设计
-
----
-
-[上一节：48.5 视图解析](./48-05-视图解析/11-06-05-视图解析.md)

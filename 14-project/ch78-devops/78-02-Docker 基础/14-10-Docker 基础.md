@@ -104,8 +104,3 @@ docker run -d -p 8080:8080 myapp:1.0
 - Docker 安装
 - 常用命令
 - Dockerfile 编写
-
----
-
-[上一节：78.1 Linux 基础](./78-01-Linux 基础/14-10-Linux 基础.md) | 
-[下一节：78.3 Docker Compose](./78-03-Docker Compose/14-10-Docker Compose.md)

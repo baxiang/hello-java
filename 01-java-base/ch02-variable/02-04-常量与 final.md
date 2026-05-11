@@ -280,38 +280,3 @@ arr[0] = 100;  // ✅ 可以修改元素
 3. **命名规范**：全大写，下划线分隔
 4. **static final**：类常量，通过类名访问
 5. **好处**：提高可读性、便于维护、避免错误
-
-## 十、练习题
-
-1. 定义以下常量：
-   - 一年的月份数（12）
-   - 一周的天数（7）
-   - 光速（299792458 m/s）
-   - 水的沸点（100℃）
-
-2. 指出以下代码的错误：
-```java
-final int x;
-x = 10;
-x = 20;
-
-final int[] arr = {1, 2, 3};
-arr = {4, 5, 6};
-```
-
-3. 改进以下代码，使用常量：
-```java
-public class Circle {
-    public double calculateArea(double r) {
-        return 3.14159 * r * r;
-    }
-    
-    public double calculateCircumference(double r) {
-        return 2 * 3.14159 * r;
-    }
-}
-```
-
----
-
-[上一节：2.3 类型转换](./02-03-类型转换.md) | [下一节：2.5 Scanner 键盘输入](./02-05-Scanner.md)

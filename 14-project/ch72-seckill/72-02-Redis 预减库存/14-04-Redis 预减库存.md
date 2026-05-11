@@ -69,8 +69,3 @@ public boolean decreaseStock(Long productId) {
 - 库存预热到 Redis
 - 原子操作防超卖
 - 失败恢复库存
-
----
-
-[上一节：72.1 秒杀架构](./72-01-秒杀架构/14-04-秒杀架构.md) | 
-[下一节：72.3 RabbitMQ 异步](./72-03-RabbitMQ 异步/14-04-RabbitMQ 异步.md)

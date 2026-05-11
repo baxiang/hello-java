@@ -93,8 +93,3 @@ docker-compose build          # 构建镜像
 - Compose 文件编写
 - 多容器管理
 - 常用命令
-
----
-
-[上一节：78.2 Docker 基础](./78-02-Docker 基础/14-10-Docker 基础.md) | 
-[下一节：78.4 CI/CD](./78-04-CI-CD/14-10-CI-CD.md)

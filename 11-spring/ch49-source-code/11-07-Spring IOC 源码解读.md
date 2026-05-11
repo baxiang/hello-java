@@ -506,7 +506,3 @@ protected Object getSingleton(String beanName, boolean allowEarlyReference) {
 3. **依赖注入**：populateBean 属性填充
 4. **Bean 初始化**：Aware → BPP 前置 → init → BPP 后置
 5. **循环依赖**：三级缓存解决单例循环依赖
-
----
-
-[上一节：11.6 Spring MVC](./11-06-Spring MVC.md) | [下一节：11.8 Spring AOP 源码解读](./11-08-Spring AOP 源码解读.md)

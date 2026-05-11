@@ -442,7 +442,3 @@ tail -f logs/catalina.out
 6. **安全**：禁用 AJP、隐藏版本、限制访问
 7. **监控**：JMX、JConsole
 8. **集群**：Session 复制、负载均衡
-
----
-
-[上一节：10.2 Servlet](./10-02-Servlet.md) | [下一章：第 11 章 Spring Framework](../ch43-spring-intro/README.md)

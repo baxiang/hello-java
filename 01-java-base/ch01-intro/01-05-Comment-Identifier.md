@@ -305,32 +305,3 @@ System.out.println("Hello");
 2. **标识符命名规则**：字母数字下划线$，不能数字开头
 3. **命名规范**：类名大驼峰、方法变量小驼峰、常量全大写
 4. **关键字**：Java 保留单词，不能用作标识符
-
-## 七、练习题
-
-1. 判断以下标识符是否合法：
-   - `userName`
-   - `123name`
-   - `$money`
-   - `class`
-   - `user_name`
-   - `public`
-
-2. 将以下变量名改为符合规范的命名：
-   - `int a = 10;`（表示学生年龄）
-   - `String S_N = "张三";`（表示学生姓名）
-   - `final int max = 100;`（表示最大分数）
-
-3. 为以下代码添加注释：
-   ```java
-   public class Circle {
-       private double radius;
-       public double getArea() {
-           return Math.PI * radius * radius;
-       }
-   }
-   ```
-
----
-
-[上一节：1.4 开发工具介绍](./01-04-IDE-Tools.md) | [下一章：第 2 章 变量与数据类型](../02-variable/README.md)

@@ -378,7 +378,3 @@ public final int add(int a, int b) {
 3. **final 类**：不能被继承
 4. **不可变类**：final 类 + private final 字段 + 只有 getter
 5. **注意**：final 引用不能改，但对象内容可以改
-
----
-
-[上一节：10.1 static 关键字](./10-01-static 关键字.md) | [下一节：10.3 访问控制修饰符](./10-03-访问控制修饰符.md)

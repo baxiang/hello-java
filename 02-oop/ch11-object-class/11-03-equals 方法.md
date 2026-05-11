@@ -364,7 +364,3 @@ class Person {
 3. **重写**：比较对象内容
 4. **规范**：自反、对称、传递、一致、非空
 5. **与 hashCode**：equals 相等则 hashCode 必须相等
-
----
-
-[上一节：11.2 toString 方法](./11-02-toString 方法.md) | [下一节：11.4 hashCode 方法](./11-04-hashCode 方法.md)

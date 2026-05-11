@@ -343,7 +343,3 @@ Map<String, Integer> map = Map.of("A", 1, "B", 2, "C", 3);
 4. **同步**：synchronizedList、synchronizedMap
 5. **不可变**：unmodifiableList、emptyList、singletonList
 6. **Java 9+**：List.of、Set.of、Map.of
-
----
-
-[上一节：4.2 HashMap 和 HashSet](./04-02-HashMap 和 HashSet.md) | [下一节：4.4 泛型进阶](./04-04-泛型进阶.md)

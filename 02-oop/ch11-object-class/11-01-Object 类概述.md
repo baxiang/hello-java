@@ -96,7 +96,3 @@ System.out.println(clazz.getName());  // 输出类名
 1. **Object 类**：所有类的根父类
 2. **常用方法**：toString、equals、hashCode、getClass 等
 3. **重写**：toString、equals、hashCode 常需要重写
-
----
-
-[下一节：11.2 toString 方法](./11-02-toString 方法.md)

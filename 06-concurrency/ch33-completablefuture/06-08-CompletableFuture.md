@@ -395,15 +395,6 @@ future.whenComplete((result, ex) -> {
     if (ex != null) ex.printStackTrace();
 });
 ```
-
-## 十、动手练习
-
-1. 使用 CompletableFuture 实现异步任务
-2. 使用 thenApply 转换结果
-3. 使用 thenCombine 组合两个任务
-4. 使用 allOf 等待所有任务完成
-5. 使用 exceptionally 处理异常
-
 ---
 
 [上一节：26.7 并发集合](./06-07-并发集合.md) | 
@@ -420,7 +411,3 @@ future.whenComplete((result, ex) -> {
 6. ✅ 原子类（AtomicInteger、LongAdder）
 7. ✅ 并发集合（ConcurrentHashMap、BlockingQueue）
 8. ✅ CompletableFuture（异步编程）
-
----
-
-[上一节：26.7 并发集合](./06-07-并发集合.md)

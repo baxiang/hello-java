@@ -377,35 +377,3 @@ public class UserController {
 2. 解析参数
 3. 调用 Service
 4. 返回响应
-
-## 十、动手练习
-
-1. 创建一个 Controller
-2. 定义多个请求映射
-3. 接收不同类型的参数
-4. 返回不同的响应
-
-```java
-@RestController
-@RequestMapping("/api/user")
-public class UserController {
-    
-    @Autowired
-    private UserService userService;
-    
-    @GetMapping("/{id}")
-    public User getUser(@PathVariable Long id) {
-        return userService.getUserById(id);
-    }
-    
-    @PostMapping
-    public User createUser(@RequestBody User user) {
-        return userService.save(user);
-    }
-}
-```
-
----
-
-[上一节：48.1 MVC 概述](./48-01-MVC 概述/11-06-01-MVC 概述.md) | 
-[下一节：48.3 请求映射](./48-03-请求映射/11-06-03-请求映射.md)

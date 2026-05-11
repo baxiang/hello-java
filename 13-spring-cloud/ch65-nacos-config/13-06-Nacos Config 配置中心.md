@@ -335,7 +335,3 @@ public class ConfigController {
 3. **配置共享**：shared-configs、extension-configs
 4. **多环境**：dev/test/prod 配置
 5. **配置加密**：敏感信息加密
-
----
-
-[上一节：13.5 Gateway API 网关](./13-05-Gateway API 网关.md) | [下一节：13.7 链路追踪](./13-07-链路追踪.md)

@@ -218,7 +218,3 @@ public class AppConfig {
 2. **注解**：@Component、@Autowired、@Bean
 3. **作用域**：singleton、prototype、request、session
 4. **生命周期**：实例化→属性赋值→初始化→使用→销毁
-
----
-
-[下一节：11.2 Spring AOP](./11-02-Spring AOP.md)

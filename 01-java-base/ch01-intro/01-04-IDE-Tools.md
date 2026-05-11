@@ -217,14 +217,3 @@ git log           # 查看历史
 2. 掌握常用快捷键提高效率
 3. Maven/Gradle 用于项目管理
 4. Git 用于版本控制
-
-## 八、练习题
-
-1. 安装 IntelliJ IDEA Community 版本
-2. 创建第一个 Java 项目并运行 Hello World
-3. 练习使用 psvm 和 sout 模板
-4. 安装 Git 并配置用户信息
-
----
-
-[上一节：1.3 Hello World](./01-03-HelloWorld.md) | [下一节：1.5 注释、标识符与关键字](./01-05-Comment-Identifier.md)

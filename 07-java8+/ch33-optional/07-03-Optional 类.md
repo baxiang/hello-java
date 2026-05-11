@@ -334,7 +334,3 @@ List<String> list = opt.stream().collect(Collectors.toList());
    - 用于方法返回值
    - 不用于字段和方法参数
    - 避免 isPresent + get 模式
-
----
-
-[上一节：7.2 Stream API](./07-02-Stream API.md) | [下一节：7.4 其他新特性](./07-04-其他新特性.md)

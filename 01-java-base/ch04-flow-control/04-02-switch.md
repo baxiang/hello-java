@@ -423,7 +423,3 @@ public class SwitchExample {
 3. **支持类型**：byte/short/int/char/String/枚举
 4. **穿透性**：可利用穿透性合并 case
 5. **Java 14+**：箭头语法 `->` 和 `yield` 返回值
-
----
-
-[上一节：4.1 if-else 条件语句](./04-01-if-else.md) | [下一节：4.3 for 循环](./04-03-for.md)

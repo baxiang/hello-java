@@ -545,7 +545,3 @@ class Student extends Person {
 3. **Getter/Setter**：提供访问私有属性的方法
 4. **JavaBean**：符合规范的 Java 类
 5. **好处**：安全、易维护、易扩展
-
----
-
-[上一节：7.4 this 关键字](./07-04-this 关键字.md) | [下一节：7.6 标准类设计](./07-06-标准类设计.md)

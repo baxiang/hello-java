@@ -127,7 +127,3 @@ boolean result = p1.and(p2).test("Hello");  // true
 2. **函数式接口**：只有一个抽象方法
 3. **方法引用**：:: 语法
 4. **常用接口**：Consumer、Supplier、Function、Predicate
-
----
-
-[下一节：7.2 Stream API](./07-02-Stream API.md)

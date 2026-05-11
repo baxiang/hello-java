@@ -499,16 +499,3 @@ src/main/resources/banner.txt
     SecurityAutoConfiguration.class
 })
 ```
-
-## 十、动手练习
-
-1. 使用 Spring Initializr 创建项目
-2. 添加 Spring Web 依赖
-3. 创建一个 Hello 接口
-4. 启动项目并访问
-5. 修改端口为 8081
-6. 添加 DevTools 实现热部署
-
----
-
-[下一节：12.2 配置文件](./12-02-配置文件.md)

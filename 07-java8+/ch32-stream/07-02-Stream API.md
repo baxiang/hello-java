@@ -413,7 +413,3 @@ String longest = Arrays.stream(text.split(" "))
 3. **终端操作**：forEach、collect、reduce、统计、匹配
 4. **收集器**：toList、toSet、toMap、joining、groupingBy
 5. **并行流**：parallelStream，注意线程安全
-
----
-
-[上一节：7.1 Lambda 表达式](./07-01-Lambda 表达式.md) | [下一节：7.3 Optional 类](./07-03-Optional 类.md)

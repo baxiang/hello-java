@@ -437,7 +437,3 @@ public class Main {
 3. **计算**：使用参与 equals 比较的字段
 4. **应用**：HashMap、HashSet 等哈希表
 5. **一起重写**：equals 和 hashCode 必须一起重写
-
----
-
-[上一节：11.3 equals 方法](./11-03-equals 方法.md) | [下一章：第 12 章 Spring Boot](../ch12-spring-boot/README.md)

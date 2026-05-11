@@ -460,7 +460,3 @@ private PointcutExpression getPointcutExpression() {
 3. **拦截器链**：MethodInvocation.proceed() 链式调用
 4. **通知类型**：Before、After、AfterReturning、AfterThrowing、Around
 5. **切点匹配**：AspectJExpressionPointcut 解析 execution 表达式
-
----
-
-[上一节：11.7 Spring IOC 源码解读](./11-07-Spring IOC 源码解读.md) | [下一章：第 12 章 Spring Boot](../ch49-spring-boot-intro/README.md)

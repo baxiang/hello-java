@@ -75,8 +75,3 @@ public class SeckillService {
 - 配置限流规则
 - 限流后友好提示
 - 保护系统不崩溃
-
----
-
-[上一节：72.3 RabbitMQ 异步](./72-03-RabbitMQ 异步/14-04-RabbitMQ 异步.md) | 
-[下一节：72.5 分布式锁](./72-05-分布式锁/14-04-分布式锁.md)

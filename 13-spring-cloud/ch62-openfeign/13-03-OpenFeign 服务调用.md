@@ -503,7 +503,3 @@ public class OrderController {
 3. **配置**：超时、日志、拦截器
 4. **负载均衡**：集成 Ribbon
 5. **熔断降级**：集成 Sentinel
-
----
-
-[上一节：13.2 Nacos 服务注册与发现](./13-02-Nacos 服务注册发现.md) | [下一节：13.4 Sentinel 服务熔断](./13-04-Sentinel 服务熔断.md)

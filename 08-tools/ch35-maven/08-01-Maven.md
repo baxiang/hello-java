@@ -175,7 +175,3 @@ parent/
 2. **坐标**：groupId、artifactId、version
 3. **依赖范围**：compile、test、provided、runtime
 4. **常用命令**：clean、compile、package、install
-
----
-
-[下一节：8.2 Git 版本控制](./08-02-Git 版本控制.md)

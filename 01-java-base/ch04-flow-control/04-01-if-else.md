@@ -376,7 +376,3 @@ public class IfExample {
 3. **if-else if-else**：多分支，多选一执行
 4. **嵌套 if**：if 语句中包含 if
 5. **注意**：条件必须是布尔值，推荐始终使用大括号
-
----
-
-[下一节：4.2 switch 分支语句](./04-02-switch.md)

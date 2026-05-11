@@ -402,7 +402,3 @@ public class BreakContinueExample {
 3. **区别**：break 结束循环，continue 继续循环
 4. **标签**：可用于多层嵌套循环
 5. **注意**：while 中 continue 要确保更新变量
-
----
-
-[上一节：4.4 while 与 do-while 循环](./04-04-while.md) | [下一节：4.6 嵌套循环](./04-06-nested-loop.md)

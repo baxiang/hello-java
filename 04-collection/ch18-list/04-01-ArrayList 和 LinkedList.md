@@ -123,7 +123,3 @@ String poll = list.poll();  // 出队
 
 1. **ArrayList**：适合读多写少，随机访问
 2. **LinkedList**：适合写多读少，频繁增删
-
----
-
-[下一节：4.2 HashMap 和 HashSet](./04-02-HashMap 和 HashSet.md)

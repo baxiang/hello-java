@@ -393,7 +393,3 @@ public class MapExample {
 3. **LinkedHashMap/Set**：保持插入顺序
 4. **TreeMap/Set**：按顺序排序
 5. **选择**：根据需求选择合适的实现
-
----
-
-[上一节：4.1 ArrayList 和 LinkedList](./04-01-ArrayList 和 LinkedList.md) | [下一节：4.3 Collections 工具类](./04-03-Collections 工具类.md)

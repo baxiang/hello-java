@@ -457,7 +457,3 @@ public class HealthController {
 3. **过滤器**：内置过滤器、自定义过滤器
 4. **限流**：集成 Sentinel
 5. **跨域**：CorsWebFilter 配置
-
----
-
-[上一节：13.4 Sentinel 服务熔断](./13-04-Sentinel 服务熔断.md) | [下一节：13.6 Nacos Config 配置中心](./13-06-Nacos Config 配置中心.md)

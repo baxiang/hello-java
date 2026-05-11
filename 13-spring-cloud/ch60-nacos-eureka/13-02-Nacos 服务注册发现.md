@@ -537,7 +537,3 @@ public class OrderController {
 3. **服务消费者**：RestTemplate + @LoadBalanced
 4. **负载均衡**：客户端负载均衡
 5. **健康检查**：心跳检测机制
-
----
-
-[上一节：13.1 微服务架构概述](./13-01-微服务架构概述.md) | [下一节：13.3 OpenFeign 服务调用](./13-03-OpenFeign 服务调用.md)

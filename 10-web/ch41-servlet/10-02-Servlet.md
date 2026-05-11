@@ -549,7 +549,3 @@ public class UserApiServlet extends HttpServlet {
 5. **Filter**：请求过滤、编码设置
 6. **Listener**：应用生命周期监听
 7. **文件上传**：@MultipartConfig
-
----
-
-[上一节：10.1 前端基础](./10-01-前端基础.md) | [下一节：10.3 Tomcat 服务器](./10-03-Tomcat 服务器.md)

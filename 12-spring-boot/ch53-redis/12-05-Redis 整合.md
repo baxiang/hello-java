@@ -520,7 +520,3 @@ public class SeckillService {
 2. **缓存注解**：@Cacheable、@CachePut、@CacheEvict
 3. **分布式锁**：Redisson 或 RedisTemplate 实现
 4. **应用场景**：缓存、计数器、排行榜、分布式锁
-
----
-
-[上一节：12.4 数据访问](./12-04-数据访问.md) | [下一节：12.6 消息队列](./12-06-消息队列.md)

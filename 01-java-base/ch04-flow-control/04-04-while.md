@@ -391,7 +391,3 @@ public class LoopExample {
 3. **死循环**：`while(true)`，需用 break 跳出
 4. **选择**：确定次数用 for，不确定用 while/do-while
 5. **注意**：更新变量、分号位置、作用域
-
----
-
-[上一节：4.3 for 循环](./04-03-for.md) | [下一节：4.5 break 与 continue](./04-05-break-continue.md)

@@ -72,8 +72,3 @@ public class SeckillConsumer {
 - 秒杀成功发消息
 - 异步创建订单
 - 削峰填谷
-
----
-
-[上一节：72.2 Redis 预减库存](./72-02-Redis 预减库存/14-04-Redis 预减库存.md) | 
-[下一节：72.4 Sentinel 限流](./72-04-Sentinel 限流/14-04-Sentinel 限流.md)

@@ -461,7 +461,3 @@ public class NestedLoopExample {
 3. **常见应用**：打印图形、排序、二维数组
 4. **优化**：减少不必要的计算
 5. **注意**：使用标签跳出多层循环
-
----
-
-[上一节：4.5 break 与 continue](./04-05-break-continue.md) | [下一章：第 5 章 数组](../ch05-array/README.md)

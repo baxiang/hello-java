@@ -383,7 +383,3 @@ if (xid == null) {
 3. **AT 模式**：无侵入，两阶段提交
 4. **TCC 模式**：Try-Confirm-Cancel
 5. **GlobalTransactional**：开启分布式事务
-
----
-
-[上一节：13.7 链路追踪](./13-07-链路追踪.md) | [下一章：第 14 章 项目实战](../ch14-project/README.md)

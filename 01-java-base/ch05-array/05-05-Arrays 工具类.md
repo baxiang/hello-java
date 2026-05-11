@@ -383,7 +383,3 @@ public class ArraysExample {
 5. **比较**：`equals()`、`mismatch()`
 6. **转字符串**：`toString()`、`deepToString()`
 7. **转列表**：`asList()`
-
----
-
-[上一节：5.4 二维数组](./05-04-二维数组.md) | [下一节：5.6 数组常见算法](./05-06-数组常见算法.md)

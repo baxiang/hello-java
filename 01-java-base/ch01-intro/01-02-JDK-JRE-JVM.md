@@ -160,13 +160,3 @@ sudo update-alternatives --config java
 2. **JRE** = JVM + 类库，用于运行程序
 3. **JVM** = 虚拟机，实现跨平台
 4. 推荐安装 Java 21 LTS 版本
-
-## 七、练习题
-
-1. 简述 JDK、JRE、JVM 的区别和联系
-2. 如何在命令行中验证 JDK 安装成功？
-3. 你选择的 IDE 是什么？为什么？
-
----
-
-[上一节：1.1 Java 简介](./01-01-Java 简介.md) | [下一节：1.3 第一个 Java 程序](./01-03-HelloWorld.md)
