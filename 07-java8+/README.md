@@ -1,46 +1,27 @@
-# 第 7 部分：Java 8+ 新特性
+# 第七部分：Java 8+ 新特性
 
-## 章节目录
+本模块学习 Java 8 及后续版本的重要新特性，包括 Lambda 表达式、Stream API、Optional 类、新日期 API 以及 Java 9-21 的版本特性概览，帮助你编写更简洁高效的代码。
 
-| 章节 | 内容 | 核心知识点 |
-|------|------|------------|
-| [31.1 Lambda 表达式](./ch31-lambda/07-01-Lambda 表达式.md) | 函数式编程 | Lambda 语法 |
-| [31.2 Stream API](./ch32-stream/07-02-Stream API.md) | 集合处理 | Stream 操作 |
-| [31.3 Optional 类](./ch33-optional/07-03-Optional 类.md) | 空值处理 | Optional 操作 |
-| [31.4 Java 11 新特性](./ch35-java11/07-05-Java 11 新特性.md) | Java 11 | var、HTTP Client |
-| [31.5 Java 17 新特性](./ch36-java17/07-06-Java 17 新特性.md) | Java 17 | Switch 增强、Record |
-| [31.6 Java 21 新特性](./ch37-java21/07-07-Java 21 新特性.md) | Java 21 | 虚拟线程 |
-| [31.7 日期时间 API](./ch38-date-time/07-08-日期时间 API.md) | 日期处理 | LocalDate、ZonedDateTime |
-| [31.8 模块化系统](./ch39-module/07-08-模块化系统.md) | Jigsaw | 模块定义、jlink |
-| [31.9 GC 改进](./ch40-gc/07-09-GC 改进.md) | 垃圾收集 | G1、ZGC、Shenandoah |
-| [31.10 最佳实践](./ch41-best-practices/07-10-最佳实践.md) | 开发指南 | 代码规范、性能优化 |
+## 章节列表
 
-## Java 版本路线图
+| 章节 | 目录 | 主题 |
+|------|------|------|
+| 第 31 章 | ch31-lambda | Lambda 表达式：函数式接口、Lambda 语法、方法引用、构造器引用 |
+| 第 32 章 | ch32-stream | Stream API：中间操作（filter/map/sorted）、终止操作（collect/forEach/reduce）、并行流、实战案例 |
+| 第 33 章 | ch33-optional | Optional 类：Optional 概述、常用方法、避免空指针异常 |
+| 第 34 章 | ch34-other-features | 其他新特性：接口默认方法、新日期 API 回顾、重复注解、Java 9-17 新特性概览 |
+| 第 35 章 | ch35-java11 | Java 11 新特性：var 局部变量、HTTP Client、ZGC 等 |
+| 第 36 章 | ch36-java17 | Java 17 新特性：sealed classes、record 类、pattern matching 等 |
+| 第 37 章 | ch37-java21 | Java 21 新特性：虚拟线程、pattern matching for switch、record patterns 等 |
+| 第 38 章 | ch38-date-time | 日期时间 API 深入：Java 8 新日期 API 进阶使用 |
+| 第 39 章 | ch39-module | 模块系统：Java 9 模块系统概念与使用 |
+| 第 40 章 | ch40-gc | GC 改进：各版本垃圾回收器演进 |
+| 第 41 章 | ch41-best-practices | 最佳实践：新特性在实际项目中的应用建议 |
 
-```
-Java 8 (2014)   → Lambda、Stream API（里程碑）
-Java 11 (2018)  → var 关键字、HTTP Client（LTS）
-Java 17 (2021)  → Switch 增强、密封类（LTS）
-Java 21 (2023)  → 虚拟线程、Record 模式（LTS）
-```
+## 学习目标
 
-## 学习路线
-
-```
-第 1 步：Lambda 表达式  → 函数式编程基础
-    ↓
-第 2 步：Stream API     → 集合流式处理
-    ↓
-第 3 步：Optional 类    → 空值处理
-    ↓
-第 4 步：Java 11 特性   → 局部变量类型推断
-    ↓
-第 5 步：Java 17 特性   → Switch 增强、密封类
-    ↓
-第 6 步：Java 21 特性   → 虚拟线程、Record 模式
-```
-
----
-
-[上一部分：第 6 部分 多线程与并发](../06-concurrency/README.md) | 
-[下一节：31.1 Lambda 表达式](./ch31-lambda/07-01-Lambda 表达式.md)
+- 掌握 Lambda 表达式的语法与函数式接口
+- 熟练使用 Stream API 进行集合数据处理
+- 理解 Optional 类避免空指针异常
+- 了解 Java 8 至 Java 21 的重要新特性
+- 能够在新项目中选择合适的新特性提升开发效率
