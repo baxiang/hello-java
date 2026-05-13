@@ -1,16 +1,19 @@
-# 第三部分：Java 核心 API
+# 核心 API、异常处理与 IO
 
-本模块介绍 Java 标准库中最常用的核心 API，包括字符串处理、包装类、日期时间、正则表达式、枚举与注解，是日常开发中频繁使用的工具类。
+本模块介绍 Java 标准库中最常用的核心 API，包括字符串处理、包装类、日期时间、正则表达式、枚举与注解，同时涵盖异常处理机制和文件与 IO 流操作，是日常开发中频繁使用的基础技能。
 
-## 章节列表
+## 文件列表
 
-| 章节 | 目录 | 主题 |
-|------|------|------|
-| 第 12 章 | ch12-string | 字符串处理：String 不可变性、常用方法、StringBuilder/StringBuffer、性能分析 |
-| 第 13 章 | ch13-wrapper-math | 包装类与数学类：自动装箱/拆箱、Integer/Double、Math 类、Random 类 |
-| 第 14 章 | ch14-datetime | 日期与时间 API：Date/SimpleDateFormat、Calendar、Java 8 新日期 API、DateTimeFormatter |
-| 第 15 章 | ch15-regex | 正则表达式：语法、Pattern/Matcher 类、字符串正则方法、实战应用 |
-| 第 16 章 | ch16-enum-annotation | 枚举与注解：枚举定义与使用、内置注解、自定义注解 |
+| 文件 | 主题 |
+|------|------|
+| 01-字符串处理.md | 字符串处理：String 不可变性、常用方法、StringBuilder/StringBuffer、性能分析 |
+| 02-包装类与数学类.md | 包装类与数学类：自动装箱/拆箱、Integer/Double、Math 类、Random 类 |
+| 03-日期时间 API.md | 日期与时间 API：Date/SimpleDateFormat、Calendar、Java 8 新日期 API、DateTimeFormatter |
+| 04-正则表达式.md | 正则表达式：语法、Pattern/Matcher 类、字符串正则方法、实战应用 |
+| 05-枚举与注解.md | 枚举与注解：枚举定义与使用、内置注解、自定义注解 |
+| 06-异常处理.md | 异常处理：异常体系、try-catch-finally、throw/throws、自定义异常、异常最佳实践 |
+| 07-File 类.md | 文件操作：File 类、文件/目录操作、文件搜索与过滤 |
+| 08-IO 流.md | IO 流：字节流与字符流、缓冲流、转换流、对象序列化、NIO 基础 |
 
 ## 学习目标
 
@@ -19,3 +22,5 @@
 - 熟练使用新旧日期时间 API
 - 掌握正则表达式的语法与应用
 - 理解枚举与注解的定义及使用场景
+- 掌握异常处理机制与自定义异常
+- 熟练使用 IO 流进行文件读写与数据处理

@@ -1,17 +1,17 @@
-# 第一部分：Java 基础语法
+# Java 基础语法
 
 本模块是 Java 学习的起点，涵盖 Java 语言的基础语法知识，从环境搭建到变量、运算符、流程控制、数组和方法，帮助你建立扎实的编程基础。
 
 ## 章节列表
 
-| 章节 | 目录 | 主题 |
-|------|------|------|
-| 第 1 章 | ch01-intro | Java 入门：JDK/JRE/JVM、Hello World、开发工具、关键字与标识符 |
-| 第 2 章 | ch02-variable | 变量与数据类型：8 种基本数据类型、类型转换、常量、Scanner 键盘输入 |
-| 第 3 章 | ch03-operator | 运算符：算术、赋值、关系、逻辑、三元运算符及优先级 |
-| 第 4 章 | ch04-flow-control | 流程控制：if-else、switch、for/while/do-while 循环、break/continue |
-| 第 5 章 | ch05-array | 数组：一维/二维数组、遍历、常见操作、Arrays 工具类、排序与查找算法 |
-| 第 6 章 | ch06-method | 方法：定义与调用、方法重载、参数传递、递归、可变参数 |
+| 目录 | 主题 |
+|------|------|
+| 01-intro | Java 入门：JDK/JRE/JVM、Hello World、开发工具、关键字与标识符 |
+| 02-variable | 变量与数据类型：8 种基本数据类型、类型转换、常量、Scanner 键盘输入 |
+| 03-operator | 运算符：算术、赋值、关系、逻辑、三元运算符及优先级 |
+| 04-flow-control | 流程控制：if-else、switch、for/while/do-while 循环、break/continue |
+| 05-array | 数组：一维/二维数组、遍历、常见操作、Arrays 工具类、排序与查找算法 |
+| 06-method | 方法：定义与调用、方法重载、参数传递、递归、可变参数 |
 
 ## 学习目标
 
