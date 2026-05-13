@@ -332,17 +332,17 @@ public class RetryDemo {
 
 | 方法 | 作用 | 返回值 |
 |------|------|--------|
-| supplyAsync | 异步执行（有返回值） | CompletableFuture<T> |
-| runAsync | 异步执行（无返回值） | CompletableFuture<Void> |
-| thenApply | 转换结果 | CompletableFuture<U> |
-| thenAccept | 消费结果 | CompletableFuture<Void> |
-| thenRun | 完成回调 | CompletableFuture<Void> |
-| thenCompose | 链式调用 | CompletableFuture<U> |
-| thenCombine | 组合两个任务 | CompletableFuture<U> |
-| allOf | 等待所有完成 | CompletableFuture<Void> |
-| anyOf | 等待第一个完成 | CompletableFuture<Object> |
-| exceptionally | 异常处理 | CompletableFuture<T> |
-| handle | 完成处理（无论成功失败） | CompletableFuture<T> |
+| supplyAsync | 异步执行（有返回值） | `CompletableFuture<T>` |
+| runAsync | 异步执行（无返回值） | `CompletableFuture<Void>` |
+| thenApply | 转换结果 | `CompletableFuture<U>` |
+| thenAccept | 消费结果 | `CompletableFuture<Void>` |
+| thenRun | 完成回调 | `CompletableFuture<Void>` |
+| thenCompose | 链式调用 | `CompletableFuture<U>` |
+| thenCombine | 组合两个任务 | `CompletableFuture<U>` |
+| allOf | 等待所有完成 | `CompletableFuture<Void>` |
+| anyOf | 等待第一个完成 | `CompletableFuture<Object>` |
+| exceptionally | 异常处理 | `CompletableFuture<T>` |
+| handle | 完成处理（无论成功失败） | `CompletableFuture<T>` |
 
 **核心要点**：
 - 异步编程，非阻塞
