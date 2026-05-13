@@ -192,9 +192,3 @@ A：创建 Redis 连接开销较大。连接池复用已有连接，减少握手
 | 数据类型 | String/List/Set/Hash/ZSet | 按场景选用 |
 | Spring 集成 | spring-boot-starter-data-redis | RedisTemplate |
 | 连接池 | Lettuce + commons-pool2 | max-active, max-idle |
-
-## 七、动手练习
-
-1. 本地安装 Redis 并启动服务（`redis-server`）
-2. 创建 Spring Boot 项目，添加 Redis 依赖
-3. 配置 `application.yml`，编写 `RedisConfig` 配置类

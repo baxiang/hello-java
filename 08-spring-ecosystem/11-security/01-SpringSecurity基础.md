@@ -138,11 +138,3 @@ A：Spring Security 提供了一个内置的登录页面，路径为 `/login`。
 | UserDetailsService | 加载用户详情 | `InMemoryUserDetailsManager` |
 | PasswordEncoder | 密码加密 | `BCryptPasswordEncoder` |
 | SecurityFilterChain | 安全过滤链配置 | `authorizeHttpRequests()` |
-
-## 七、动手练习
-
-1. 创建 Spring Boot 项目，添加 Security 依赖
-2. 编写 `SecurityConfig` 配置类，区分公开路径和受保护路径
-3. 创建两个内存用户（普通用户和管理员），分别测试登录和访问 `/admin/**` 接口
-4. 尝试用 user 账号访问 `/admin/users`，观察 403 禁止访问的响应
-5. 将 `spring-boot-starter-security` 依赖注释掉，重启项目，对比前后行为差异

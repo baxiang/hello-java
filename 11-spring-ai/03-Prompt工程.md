@@ -144,9 +144,3 @@ A：在 Prompt 中强调格式要求，添加"必须严格遵循格式"等约束
 | Few-shot | 通过示例引导 AI 输出 | 在模板中包含示例输入输出对 |
 | BeanOutputConverter | 将响应解析为 Java Bean | `new BeanOutputConverter<>(Class)` |
 | SystemMessage | 定义 AI 角色和行为 | `new SystemMessage("...")` |
-
-## 八、动手练习
-
-1. 创建一个带变量的 Prompt 模板，支持动态指定技术栈和难度级别
-2. 实现 Few-shot 翻译服务，提供至少 3 个示例
-3. 使用 BeanOutputConverter 解析结构化数据（如商品、用户信息等）

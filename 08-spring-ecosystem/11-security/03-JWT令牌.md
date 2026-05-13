@@ -195,9 +195,3 @@ A：JWT 本身无状态，登出需客户端删除 Token，或在服务端维护
 | Signature | 签名验证 | signWith() |
 | JwtUtil | Token 工具类 | generateToken, validateToken |
 | Filter | 请求拦截 | OncePerRequestFilter |
-
-## 九、动手练习
-
-1. 配置 JWT 密钥和过期时间
-2. 实现 JwtUtil 工具类
-3. 创建 JWT 认证过滤器并配置到 Security 链

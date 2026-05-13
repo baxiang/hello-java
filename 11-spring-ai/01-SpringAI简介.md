@@ -144,10 +144,3 @@ A：Spring AI 是 Spring 官方项目，与 Spring Boot 集成更自然；LangCh
 | Prompt | 输入提示 | .user("问题") |
 | Output | 生成结果 | .call().content() |
 | 配置 | API Key 和模型 | spring.ai.openai.* |
-
-## 八、动手练习
-
-1. 创建 Spring Boot 项目，添加 Spring AI 依赖
-2. 配置 OpenAI 或 Ollama API Key
-3. 实现一个简单的问答服务
-4. 尝试切换不同的模型提供商，观察 API 差异

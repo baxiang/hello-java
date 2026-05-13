@@ -144,9 +144,3 @@ A：功能相同。@WebServlet 是 Servlet 3.0+ 的注解方式，更简洁；we
 | 处理请求 | 每次请求执行 | doGet()/doPost() |
 | 销毁 | 只执行一次 | destroy() |
 | 配置 | 映射 URL | @WebServlet |
-
-## 七、动手练习
-
-1. 创建第一个 HelloServlet，访问 `/hello` 输出欢迎信息
-2. 在 init 和 destroy 方法中打印日志，观察执行时机
-3. 分别使用注解和 web.xml 配置同一个 Servlet

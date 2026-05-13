@@ -159,11 +159,3 @@ public class KafkaConsumer {
 | Group | 消费组 | 负载均衡 |
 | KafkaTemplate | 发送消息 | send() |
 | @KafkaListener | 监听消息 | topics, groupId |
-
-## 八、动手练习
-
-1. 安装 Kafka 并启动服务
-2. 创建 Spring Boot 项目，添加 spring-kafka 依赖
-3. 配置 Kafka 连接信息（bootstrap-servers）
-4. 实现简单的生产者，发送消息到 demo-topic
-5. 实现消费者，使用 @KafkaListener 监听并打印消息

@@ -190,9 +190,3 @@ A：不同操作返回值不同。如 add 返回添加的成员数（Long），z
 | List | opsForList() | leftPush, rightPush, range |
 | Set | opsForSet() | add, members, isMember |
 | ZSet | opsForZSet() | add, rank, range |
-
-## 九、动手练习
-
-1. 使用 String 操作实现计数器功能
-2. 使用 Hash 操作存储用户信息
-3. 使用 List 操作实现最新消息列表
