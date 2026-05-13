@@ -17,6 +17,9 @@
 | 第 39 章 | ch39-module | 模块系统：Java 9 模块系统概念与使用 |
 | 第 40 章 | ch40-gc | GC 改进：各版本垃圾回收器演进 |
 | 第 41 章 | ch41-best-practices | 最佳实践：新特性在实际项目中的应用建议 |
+| 第 42 章 | ch42-virtual-threads | Virtual Threads（虚拟线程）：虚拟线程原理、创建方式、高并发场景、性能对比 |
+| 第 43 章 | ch43-pattern-matching | 模式匹配与 Record 类：Record 类、模式匹配、switch 增强、密封类 |
+| 第 44 章 | ch44-structured-concurrency | Structured Concurrency：结构化并发、StructuredTaskScope、错误传播 |
 
 ## 学习目标
 

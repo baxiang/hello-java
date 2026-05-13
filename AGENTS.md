@@ -37,7 +37,7 @@ NN-topic/                    ← 模块目录，NN 为两位序号
 | `04-collection/` | 集合框架 | ch17-ch22 |
 | `05-exception-io/` | 异常处理与 IO | ch23-ch25 |
 | `06-concurrency/` | 多线程与并发 | ch26-ch30 |
-| `07-java8+/` | Java 8+ 新特性 | ch31-ch34 |
+| `07-java8+/` | Java 8+ 新特性 | ch31-ch44 |
 | `08-tools/` | 开发工具（Maven/Git/IDEA） | ch35-ch37 |
 | `09-database/` | 数据库与 JDBC | ch38-ch39 |
 | `10-web/` | Web 开发基础 | ch40-ch42 |

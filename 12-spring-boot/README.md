@@ -16,6 +16,7 @@
 | 第 56 章 | ch56-security | 安全框架：Spring Security 基础、认证与授权、JWT 令牌、OAuth2 简介 |
 | 第 57 章 | ch57-test | 测试：JUnit 5 单元测试、MockMvc、Mockito 模拟对象 |
 | 第 58 章 | ch58-deploy | 部署与监控：打包部署、Actuator 监控、日志配置、Docker 容器化部署 |
+| 第 59 章 | ch59-native | Spring Boot Native 编译：GraalVM 基础、AOT 编译、Native Image 构建、限制与最佳实践 |
 
 ## 学习目标
 

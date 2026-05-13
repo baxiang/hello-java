@@ -24,14 +24,15 @@ hello-java/
 ├── 04-collection/                 # 第四部分：集合框架
 ├── 05-exception-io/               # 第五部分：异常处理与 IO
 ├── 06-concurrency/                # 第六部分：多线程与并发
-├── 07-java8/                      # 第七部分：Java 8+ 新特性
+├── 07-java8+/                      # 第七部分：Java 8+ 新特性
 ├── 08-tools/                      # 第八部分：开发工具与构建
 ├── 09-database/                   # 第九部分：数据库与 JDBC
 ├── 10-web/                        # 第十部分：Web 开发基础
 ├── 11-spring/                     # 第十一部分：Spring Framework
 ├── 12-spring-boot/                # 第十二部分：Spring Boot
 ├── 13-spring-cloud/               # 第十三部分：Spring Cloud 微服务
-└── 14-project/                    # 第十四部分：项目实战
+├── 14-project/                    # 第十四部分：项目实战
+└── 15-spring-ai/                  # 第十五部分：Spring AI 集成
 ```
 
 ## 📋 课程大纲
@@ -78,11 +79,21 @@ hello-java/
 - 第 29 章：线程池
 - 第 30 章：并发编程进阶
 
-#### 第七部分：Java 8+ 新特性（07-java8，第 31-34 章，4 节）✅
+#### 第七部分：Java 8+ 新特性（07-java8+，第 31-44 章，14 节）✅
 - 第 31 章：Lambda 表达式
 - 第 32 章：Stream API
 - 第 33 章：Optional 类
 - 第 34 章：其他新特性
+- 第 35 章：Java 11 新特性
+- 第 36 章：Java 17 新特性
+- 第 37 章：Java 21 新特性
+- 第 38 章：日期时间 API 深入
+- 第 39 章：模块系统
+- 第 40 章：GC 改进
+- 第 41 章：最佳实践
+- 第 42 章：Virtual Threads（虚拟线程）
+- 第 43 章：模式匹配与 Record 类
+- 第 44 章：Structured Concurrency
 
 #### 第八部分：开发工具与构建（08-tools，第 35-37 章，3 节）✅
 - 第 35 章：Maven
@@ -107,7 +118,7 @@ hello-java/
 - 第 48 章：Spring MVC
 - 第 49 章：Spring 源码解读（IOC、AOP）
 
-#### 第十二部分：Spring Boot（12-spring-boot，第 49-58 章，10 节）✅
+#### 第十二部分：Spring Boot（12-spring-boot，第 49-59 章，11 节）✅
 - 第 49 章：Spring Boot 入门
 - 第 50 章：配置文件
 - 第 51 章：Web 开发
@@ -118,31 +129,41 @@ hello-java/
 - 第 56 章：安全框架
 - 第 57 章：测试
 - 第 58 章：部署与监控
+- 第 59 章：Native 编译（GraalVM）
 
-#### 第十三部分：Spring Cloud（13-spring-cloud，第 59-68 章，10 节）✅
-- 第 59 章：微服务架构概述
-- 第 60 章：Nacos 服务注册与发现
-- 第 61 章：负载均衡
-- 第 62 章：OpenFeign 服务调用
-- 第 63 章：Sentinel 服务熔断
-- 第 64 章：Gateway API 网关
-- 第 65 章：Nacos Config 配置中心
-- 第 66 章：链路追踪
-- 第 67 章：消息驱动
-- 第 68 章：Seata 分布式事务
+#### 第十三部分：Spring Cloud（13-spring-cloud，第 60-69 章，10 节）✅
+- 第 60 章：微服务架构概述
+- 第 61 章：Nacos 服务注册与发现
+- 第 62 章：负载均衡
+- 第 63 章：OpenFeign 服务调用
+- 第 64 章：Sentinel 服务熔断
+- 第 65 章：Gateway API 网关
+- 第 66 章：Nacos Config 配置中心
+- 第 67 章：链路追踪
+- 第 68 章：消息驱动
+- 第 69 章：Seata 分布式事务
 
-#### 第十四部分：项目实战（14-project，第 69-79 章，9 节）✅
-- 第 69 章：博客系统
-- 第 70 章：在线商城系统
-- 第 71 章：企业级 OA 系统
-- 第 72 章：秒杀系统
-- 第 73 章：分布式外卖平台
-- 第 74 章：数据可视化大屏系统
-- 第 75 章：在线考试系统
-- 第 76 章：内容管理系统 CMS
-- 第 77 章：项目通用技能
-- 第 78 章：DevOps 与部署
-- 第 79 章：Mini-Spring 项目（逐步实现 Spring）
+#### 第十四部分：项目实战（14-project，第 70-80 章，11 节）✅
+- 第 70 章：博客系统
+- 第 71 章：在线商城系统
+- 第 72 章：企业级 OA 系统
+- 第 73 章：秒杀系统
+- 第 74 章：分布式外卖平台
+- 第 75 章：数据可视化大屏系统
+- 第 76 章：在线考试系统
+- 第 77 章：内容管理系统 CMS
+- 第 78 章：项目通用技能
+- 第 79 章：DevOps 与部署
+- 第 80 章：Mini-Spring 项目（逐步实现 Spring）
+
+#### 第十五部分：Spring AI 集成（15-spring-ai，第 81-87 章，7 节）✅
+- 第 81 章：Spring AI 简介
+- 第 82 章：LLM 模型集成
+- 第 83 章：Prompt 工程
+- 第 84 章：RAG 架构
+- 第 85 章：向量数据库
+- 第 86 章：Function Calling
+- 第 87 章：实战项目（AI 智能客服）
 
 ```
 01-java-base/
@@ -208,14 +229,24 @@ hello-java/
 └── ch30-advanced/           # 并发编程进阶
 ```
 
-### 第七部分：Java 8+ 新特性（第 31-34 章）
+### 第七部分：Java 8+ 新特性（第 31-44 章）
 
 ```
-07-java8/
+07-java8+/
 ├── ch31-lambda/           # Lambda 表达式
 ├── ch32-stream/           # Stream API
 ├── ch33-optional/         # Optional 类
-└── ch34-other-features/   # 其他新特性
+├── ch34-other-features/   # 其他新特性
+├── ch35-java11/           # Java 11 新特性
+├── ch36-java17/           # Java 17 新特性
+├── ch37-java21/           # Java 21 新特性
+├── ch38-date-time/        # 日期时间 API
+├── ch39-module/           # 模块系统
+├── ch40-gc/               # GC 改进
+├── ch41-best-practices/   # 最佳实践
+├── ch42-virtual-threads/  # 虚拟线程
+├── ch43-pattern-matching/ # 模式匹配与 Record 类
+└── ch44-structured-concurrency/ # 结构化并发
 ```
 
 ### 第八部分：开发工具与构建（第 35-37 章）
@@ -256,7 +287,7 @@ hello-java/
 └── ch48-spring-mvc/       # Spring MVC
 ```
 
-### 第十二部分：Spring Boot（第 49-58 章）
+### 第十二部分：Spring Boot（第 49-59 章）
 
 ```
 12-spring-boot/
@@ -269,39 +300,54 @@ hello-java/
 ├── ch55-schedule/             # 定时任务
 ├── ch56-security/             # 安全框架
 ├── ch57-test/                 # 测试
-└── ch58-deploy/               # 部署与监控
+├── ch58-deploy/               # 部署与监控
+└── ch59-native/               # Native 编译（GraalVM）
 ```
 
-### 第十三部分：Spring Cloud 微服务（第 59-68 章）
+### 第十三部分：Spring Cloud 微服务（第 60-69 章）
 
 ```
 13-spring-cloud/
-├── ch59-microservice-intro/     # 微服务架构概述
-├── ch60-nacos-eureka/           # 服务注册与发现
-├── ch61-loadbalancer/           # 负载均衡
-├── ch62-openfeign/              # 服务调用
-├── ch63-sentinel-hystrix/       # 服务熔断与降级
-├── ch64-gateway/                # API 网关
-├── ch65-nacos-config/           # 配置中心
-├── ch66-sleuth-zipkin/          # 链路追踪
-├── ch67-stream/                 # 消息驱动
-└── ch68-seata/                  # 分布式事务
+├── ch60-microservice-intro/     # 微服务架构概述
+├── ch61-nacos-eureka/           # 服务注册与发现
+├── ch62-loadbalancer/           # 负载均衡
+├── ch63-openfeign/              # 服务调用
+├── ch64-sentinel-hystrix/       # 服务熔断与降级
+├── ch65-gateway/                # API 网关
+├── ch66-nacos-config/           # 配置中心
+├── ch67-sleuth-zipkin/          # 链路追踪
+├── ch68-stream/                 # 消息驱动
+└── ch69-seata/                  # 分布式事务
 ```
 
-### 第十四部分：项目实战（第 69-78 章）
+### 第十四部分：项目实战（第 70-80 章）
 
 ```
 14-project/
-├── ch69-blog/             # 博客系统
-├── ch70-mall/             # 在线商城系统
-├── ch71-oa/               # 企业级 OA 系统
-├── ch72-seckill/          # 秒杀系统
-├── ch73-takeout/          # 分布式外卖平台
-├── ch74-dashboard/        # 数据可视化大屏系统
-├── ch75-exam/             # 在线考试系统
-├── ch76-cms/              # 内容管理系统
-├── ch77-common-skills/    # 项目通用技能
-└── ch78-devops/           # DevOps 与部署
+├── ch70-blog/             # 博客系统
+├── ch71-mall/             # 在线商城系统
+├── ch72-oa/               # 企业级 OA 系统
+├── ch73-seckill/          # 秒杀系统
+├── ch74-takeout/          # 分布式外卖平台
+├── ch75-dashboard/        # 数据可视化大屏系统
+├── ch76-exam/             # 在线考试系统
+├── ch77-cms/              # 内容管理系统
+├── ch78-common-skills/    # 项目通用技能
+├── ch79-devops/           # DevOps 与部署
+└── ch80-minispring/       # 手写 MiniSpring
+```
+
+### 第十五部分：Spring AI 集成（第 81-87 章）
+
+```
+15-spring-ai/
+├── ch81-spring-ai-intro/      # Spring AI 简介
+├── ch82-llm-integration/      # LLM 模型集成
+├── ch83-prompt-engineering/   # Prompt 工程
+├── ch84-rag/                  # RAG 架构
+├── ch85-vector-db/            # 向量数据库
+├── ch86-function-calling/     # Function Calling
+└── ch87-ai-project/           # AI 智能客服实战
 ```
 
 ## 🎯 学习建议
@@ -314,16 +360,17 @@ hello-java/
 
 ## 🎉 完成总结
 
-本教程涵盖 Java 开发的完整知识体系，从基础语法到 Spring Cloud 微服务架构，包含 8 个实战项目。
+本教程涵盖 Java 开发的完整知识体系，从基础语法到 Spring Cloud 微服务架构，包含 8 个实战项目和 Spring AI 集成。
 
-**总计**：14 部分，78 章，全部完成！
+**总计**：15 部分，87 章，全部完成！
 
 | 部分 | 章节数 | 状态 |
 |------|--------|------|
 | Java 基础 | 第 1-11 章（50 节） | ✅ |
-| Spring Boot | 第 12 章（10 节） | ✅ |
+| Spring Boot | 第 12 章（11 节） | ✅ |
 | Spring Cloud | 第 13 章（10 节） | ✅ |
-| 项目实战 | 第 14 章（8 节） | ✅ |
+| 项目实战 | 第 14 章（11 节） | ✅ |
+| Spring AI | 第 15 章（7 节） | ✅ |
 
 仓库地址：https://github.com/baxiang/hello-java
 

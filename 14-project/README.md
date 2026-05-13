@@ -6,17 +6,17 @@
 
 | 章节 | 目录 | 主题 |
 |------|------|------|
-| 第 69 章 | ch69-blog | 博客系统（单体架构）：项目搭建、用户认证、文章 CRUD、分类标签、评论、文件上传、部署上线 |
-| 第 70 章 | ch70-mall | 在线商城系统（前后端分离）：RESTful API、商品 SKU/SPU、购物车（Redis）、订单支付、Elasticsearch 搜索 |
-| 第 71 章 | ch71-oa | 企业 OA 系统（权限管理）：RBAC 权限模型、Spring Security + JWT、考勤审批、数据权限、导出导入 |
-| 第 72 章 | ch72-seckill | 秒杀系统（高并发场景）：Redis 预减库存、RabbitMQ 异步下单、Sentinel 限流、分布式锁、防超卖 |
-| 第 73 章 | ch73-takeout | 分布式外卖平台（Spring Cloud）：微服务拆分、Nacos、OpenFeign、Gateway、Sentinel、Seata、SkyWalking |
-| 第 74 章 | ch74-dashboard | 数据可视化大屏系统：数据采集清洗、统计分析、WebSocket 实时推送、缓存策略 |
-| 第 75 章 | ch75-exam | 在线考试系统：题库管理、自动组卷、在线答题、防作弊、自动阅卷、错题本 |
-| 第 76 章 | ch76-cms | 内容管理系统（CMS）：栏目管理、内容管理、模板引擎、静态页面生成、SEO 优化 |
-| 第 77 章 | ch77-common-skills | 项目通用技能：代码规范、Git Flow、接口文档、单元测试、日志规范 |
-| 第 78 章 | ch78-devops | DevOps 与部署：Linux 服务器、MySQL 主从、Redis 集群、Nginx、Docker、CI/CD、监控告警 |
-| 第 79 章 | ch79-minispring | MiniSpring 手写框架：手写简易 Spring 框架，深入理解核心原理 |
+| 第 70 章 | ch70-blog | 博客系统（单体架构）：项目搭建、用户认证、文章 CRUD、分类标签、评论、文件上传、部署上线 |
+| 第 71 章 | ch71-mall | 在线商城系统（前后端分离）：RESTful API、商品 SKU/SPU、购物车（Redis）、订单支付、Elasticsearch 搜索 |
+| 第 72 章 | ch72-oa | 企业 OA 系统（权限管理）：RBAC 权限模型、Spring Security + JWT、考勤审批、数据权限、导出导入 |
+| 第 73 章 | ch73-seckill | 秒杀系统（高并发场景）：Redis 预减库存、RabbitMQ 异步下单、Sentinel 限流、分布式锁、防超卖 |
+| 第 74 章 | ch74-takeout | 分布式外卖平台（Spring Cloud）：微服务拆分、Nacos、OpenFeign、Gateway、Sentinel、Seata、SkyWalking |
+| 第 75 章 | ch75-dashboard | 数据可视化大屏系统：数据采集清洗、统计分析、WebSocket 实时推送、缓存策略 |
+| 第 76 章 | ch76-exam | 在线考试系统：题库管理、自动组卷、在线答题、防作弊、自动阅卷、错题本 |
+| 第 77 章 | ch77-cms | 内容管理系统（CMS）：栏目管理、内容管理、模板引擎、静态页面生成、SEO 优化 |
+| 第 78 章 | ch78-common-skills | 项目通用技能：代码规范、Git Flow、接口文档、单元测试、日志规范 |
+| 第 79 章 | ch79-devops | DevOps 与部署：Linux 服务器、MySQL 主从、Redis 集群、Nginx、Docker、CI/CD、监控告警 |
+| 第 80 章 | ch80-minispring | MiniSpring 手写框架：手写简易 Spring 框架，深入理解核心原理 |
 
 ## 学习目标
 
