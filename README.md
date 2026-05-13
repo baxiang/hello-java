@@ -37,7 +37,7 @@ hello-java/
 
 ## 📋 课程大纲
 
-### ✅ 已完成部分（14/14 部分，78 节）
+### ✅ 已完成部分（15/15 部分）
 
 #### 第一部分：Java 基础语法（01-java-base，第 1-6 章，33 节）✅
 - 第 1 章：Java 入门（5 节）
@@ -61,9 +61,11 @@ hello-java/
 - 第 15 章：正则表达式
 - 第 16 章：枚举与注解
 
-#### 第四部分：集合框架（04-collection，第 17-22 章，4 节）✅
+#### 第四部分：集合框架（04-collection，第 17-22 章，11 节）✅
+- 第 17 章：集合框架概述
 - 第 18 章：ArrayList 和 LinkedList
-- 第 20 章：HashMap 和 HashSet
+- 第 19 章：HashSet 与 TreeSet
+- 第 20 章：HashMap、LinkedHashMap 与 TreeMap
 - 第 21 章：Collections 工具类
 - 第 22 章：泛型进阶
 
@@ -156,14 +158,14 @@ hello-java/
 - 第 79 章：DevOps 与部署
 - 第 80 章：Mini-Spring 项目（逐步实现 Spring）
 
-#### 第十五部分：Spring AI 集成（15-spring-ai，第 81-87 章，7 节）✅
-- 第 81 章：Spring AI 简介
-- 第 82 章：LLM 模型集成
-- 第 83 章：Prompt 工程
-- 第 84 章：RAG 架构
-- 第 85 章：向量数据库
-- 第 86 章：Function Calling
-- 第 87 章：实战项目（AI 智能客服）
+#### 第十五部分：Spring AI 集成（15-spring-ai，第 81-87 章）✅
+- 第 81 章：Spring AI 简介 ✅
+- 第 82 章：LLM 模型集成 ✅
+- 第 83 章：Prompt 工程 ✅
+- 第 84 章：RAG 架构 ✅
+- 第 85 章：向量数据库 ✅
+- 第 86 章：Function Calling ✅
+- 第 87 章：实战项目（AI 智能客服） ✅
 
 ```
 01-java-base/
@@ -364,13 +366,23 @@ hello-java/
 
 **总计**：15 部分，87 章，全部完成！
 
-| 部分 | 章节数 | 状态 |
-|------|--------|------|
-| Java 基础 | 第 1-11 章（50 节） | ✅ |
-| Spring Boot | 第 12 章（11 节） | ✅ |
-| Spring Cloud | 第 13 章（10 节） | ✅ |
-| 项目实战 | 第 14 章（11 节） | ✅ |
-| Spring AI | 第 15 章（7 节） | ✅ |
+| 部分 | 章节范围 | 状态 |
+|------|----------|------|
+| 01 Java 基础语法 | ch01-ch06 | ✅ |
+| 02 面向对象编程 | ch07-ch11 | ✅ |
+| 03 核心 API | ch12-ch16 | ✅ |
+| 04 集合框架 | ch17-ch22 | ✅ |
+| 05 异常处理与 IO | ch23-ch25 | ✅ |
+| 06 多线程与并发 | ch26-ch30 | ✅ |
+| 07 Java 8+ 新特性 | ch31-ch44 | ✅ |
+| 08 开发工具 | ch35-ch37 | ✅ |
+| 09 数据库与 JDBC | ch38-ch39 | ✅ |
+| 10 Web 开发基础 | ch40-ch42 | ✅ |
+| 11 Spring Framework | ch43-ch49 | ✅ |
+| 12 Spring Boot | ch49-ch59 | ✅ |
+| 13 Spring Cloud 微服务 | ch60-ch69 | ✅ |
+| 14 项目实战 | ch70-ch80 | ✅ |
+| 15 Spring AI 集成 | ch81-ch87 | ✅ |
 
 仓库地址：https://github.com/baxiang/hello-java
 

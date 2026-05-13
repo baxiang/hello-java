@@ -128,15 +128,12 @@ class AIServiceTest {
 ## 六、常见疑问
 
 **Q1：Spring AI 支持哪些模型提供商？**
-
 A：支持 OpenAI、Ollama（本地模型）、阿里云百炼、Azure OpenAI、Anthropic 等。
 
 **Q2：需要付费才能使用吗？**
-
 A：Spring AI 本身免费开源。模型提供商通常按 Token 收费，Ollama 可本地免费运行。
 
 **Q3：Spring AI 和 LangChain4j 有什么区别？**
-
 A：Spring AI 是 Spring 官方项目，与 Spring Boot 集成更自然；LangChain4j 是社区项目，功能更丰富。推荐根据项目需求选择。
 
 ## 七、小结

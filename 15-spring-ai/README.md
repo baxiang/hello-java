@@ -7,12 +7,12 @@
 | 章节 | 内容 | 核心知识点 |
 |------|------|------------|
 | [81.1 Spring AI 简介](./ch81-spring-ai-intro/15-01-SpringAI简介.md) | 项目概述与环境搭建 | ChatClient、Prompt API |
-| 第 82 章 | LLM 模型集成 | OpenAI/Ollama/阿里云 |
-| 第 83 章 | Prompt 工程 | 模板、结构化提示 |
-| 第 84 章 | RAG 架构 | 检索增强生成 |
-| 第 85 章 | 向量数据库 | Milvus/Weaviate |
-| 第 86 章 | Function Calling | 工具调用 |
-| 第 87 章 | 实战项目 | AI 智能客服系统 |
+| [82.1 LLM 模型集成](./ch82-llm-integration/15-02-LLM模型集成.md) | 多模型支持 | ChatModel、EmbeddingModel、Ollama、流式响应 |
+| [83.1 Prompt 工程](./ch83-prompt-engineering/15-03-Prompt工程.md) | 模板、结构化提示 | PromptTemplate、Few-shot、BeanOutputConverter |
+| [84.1 RAG 架构](./ch84-rag/15-04-RAG架构.md) | 检索增强生成 | VectorStore、文档切分、检索+生成 |
+| [85.1 向量数据库](./ch85-vector-db/15-05-向量数据库.md) | 语义存储与检索 | PgVector、Milvus、元数据过滤 |
+| [86.1 Function Calling](./ch86-function-calling/15-06-FunctionCalling.md) | 工具调用 | @Description、多工具编排 |
+| [87.1 AI 智能客服实战](./ch87-ai-project/15-07-AI智能客服.md) | 综合项目 | RAG + Function Calling + ChatMemory |
 
 ## 学习路线
 

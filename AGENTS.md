@@ -4,8 +4,8 @@
 
 ## 仓库性质
 
-- 本仓库是 **中文 Java 教程文档集合**，不含任何可编译/运行的源代码
-- 所有内容为 `.md` 文件，按 14 个学习模块组织在编号目录中（`01-java-base/` ~ `14-project/`）
+- **中文 Java 教程文档集合**，不含任何可编译/运行的源代码
+- 所有内容为 `.md` 文件，按 15 个学习模块组织在编号目录中（`01-java-base/` ~ `15-spring-ai/`）
 
 ## 目录结构约定
 
@@ -17,6 +17,7 @@ NN-topic/                    ← 模块目录，NN 为两位序号
 
 - 文件名中的模块号与目录序号对应（如 `11-spring/ch48-spring-mvc/11-06-06-RESTful API.md`）
 - 部分章节目录下有多个 `.md` 文件，按主题细分
+- 章节号全局递增但存在跨模块重叠（如 `07-java8+/` 和 `08-tools/` 都有 ch35-ch37）
 
 ## 写作规范（来自 TASKS.md）
 
@@ -42,9 +43,10 @@ NN-topic/                    ← 模块目录，NN 为两位序号
 | `09-database/` | 数据库与 JDBC | ch38-ch39 |
 | `10-web/` | Web 开发基础 | ch40-ch42 |
 | `11-spring/` | Spring Framework | ch43-ch49 |
-| `12-spring-boot/` | Spring Boot | ch49-ch58 |
-| `13-spring-cloud/` | Spring Cloud 微服务 | ch59-ch68 |
-| `14-project/` | 项目实战 | ch69-ch79 |
+| `12-spring-boot/` | Spring Boot | ch49-ch59 |
+| `13-spring-cloud/` | Spring Cloud 微服务 | ch60-ch69 |
+| `14-project/` | 项目实战 | ch70-ch80 |
+| `15-spring-ai/` | Spring AI 集成 | ch81-ch87（ch84-ch87 待编写） |
 
 ## 关键文件
 
