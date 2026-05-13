@@ -37,12 +37,13 @@ hello-java/
 ### ✅ 已完成部分（11/11 部分）
 
 #### 01 Java 基础语法（01-java-base）✅
-- 01-intro：Java 入门（5 节）
-- 02-variable：变量与数据类型（5 节）
-- 03-operator：运算符（6 节）
-- 04-flow-control：流程控制（6 节）
-- 05-array：数组（8 节）
-- 06-method：方法（5 节）
+- 01-intro：Java 入门（2 节）
+- 02-variable：变量与数据类型（3 节）
+- 03-operator：运算符（2 节）
+- 04-flow-control：流程控制（3 节）
+- 05-array：数组（2 节）
+- 06-algorithm：排序与查找算法（1 节）
+- 07-method：方法（3 节）
 
 #### 02 面向对象编程（02-oop）✅
 - 01-class-object：类与对象（7 节）

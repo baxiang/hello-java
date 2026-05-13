@@ -6,12 +6,13 @@
 
 | 目录 | 主题 |
 |------|------|
-| 01-intro | Java 入门：JDK/JRE/JVM、Hello World、开发工具、关键字与标识符 |
-| 02-variable | 变量与数据类型：8 种基本数据类型、类型转换、常量、Scanner 键盘输入 |
-| 03-operator | 运算符：算术、赋值、关系、逻辑、三元运算符及优先级 |
-| 04-flow-control | 流程控制：if-else、switch、for/while/do-while 循环、break/continue |
-| 05-array | 数组：一维/二维数组、遍历、常见操作、Arrays 工具类、排序与查找算法 |
-| 06-method | 方法：定义与调用、方法重载、参数传递、递归、可变参数 |
+| 01-intro | Java 入门：简介、JDK/JVM、HelloWorld、开发环境 |
+| 02-variable | 变量与数据类型：变量定义、类型转换、常量、Scanner |
+| 03-operator | 运算符：算术/关系运算符、逻辑/三元运算符与优先级 |
+| 04-flow-control | 流程控制：条件判断、循环语句、流程控制与嵌套 |
+| 05-array | 数组：数组基础、二维数组与工具类 |
+| 06-algorithm | 排序与查找算法 |
+| 07-method | 方法：定义与重载、参数传递与可变参数、递归 |
 
 ## 学习目标
 
