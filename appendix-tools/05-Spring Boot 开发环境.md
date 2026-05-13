@@ -6,11 +6,16 @@ Spring Boot 开发可以选择多种 IDE，各有优劣：
 
 | 工具 | 优点 | 缺点 | 适合场景 |
 |------|------|------|----------|
-| IntelliJ IDEA | 功能最强、Spring 原生支持 | 付费、占用资源大 | 企业级开发 |
-| VSCode | 轻量、免费、全栈支持 | 需要配置扩展 | 全栈开发、学习 |
-| Eclipse (Spring Tool Suite) | 免费、Spring 官方定制 | 体验不如 IDEA | 预算有限团队 |
+| IntelliJ IDEA Ultimate | 功能最强、Spring 原生支持 | 付费、占用资源大 | 企业级开发 |
+| IntelliJ IDEA Community | 免费、Java SE 支持好 | 不支持 Spring、数据库工具 | Java 基础学习 |
+| VSCode + Spring 扩展 | 轻量、免费、全栈支持 | 需配置扩展、重构能力弱 | 全栈开发、学习 |
+| Spring Tool Suite (STS) | 免费、Spring 官方定制 | 体验不如 IDEA | 预算有限团队 |
+
+> **免费开发 Spring Boot 推荐方案**：VSCode + Spring Boot Extension Pack，零成本即可获得完整的 Spring Boot 开发体验（项目创建、属性补全、Bean 导航、调试）。IDEA Community 不含 Spring 支持，开发 Spring Boot 需购买 Ultimate 或改用 VSCode。
 
 ## 二、IDEA + Spring Boot
+
+> 以下功能需要 **IDEA Ultimate**。IDEA Community 不支持 Spring Boot 专属功能，建议使用 VSCode + Spring Boot Extension Pack 替代。
 
 ### 2.1 Spring Assistant 插件
 
@@ -57,7 +62,7 @@ demo/
 
 ### 2.3 Spring Boot 专属功能
 
-IDEA 对 Spring Boot 的专属支持：
+IDEA Ultimate 对 Spring Boot 的专属支持：
 
 ```
 1. application.yml 属性补全和验证
@@ -73,6 +78,43 @@ IDEA 对 Spring Boot 的专属支持：
 View → Tool Windows → Services
 或
 Alt + 8
+```
+
+## 二-B、VSCode + Spring Boot（免费方案）
+
+VSCode + Spring Boot Extension Pack 是免费开发 Spring Boot 的推荐方案：
+
+### 2B.1 安装 Spring Boot Extension Pack
+
+```
+1. 安装 Extension Pack for Java
+2. 安装 Spring Boot Extension Pack（包含以下扩展）：
+   - Spring Boot Tools：属性补全、Bean 导航
+   - Spring Initializr：在 VSCode 中创建 Spring Boot 项目
+   - Spring Boot Dashboard：可视化管理应用启动/停止
+   - Spring Boot Live Information：实时 Bean 信息
+```
+
+### 2B.2 创建 Spring Boot 项目
+
+```
+1. Ctrl/Cmd + Shift + P
+2. 输入 "Spring Initializr: Create a Maven/Gradle Project"
+3. 选择 Spring Boot 版本
+4. 选择语言（Java）
+5. 输入 groupId、artifactId
+6. 选择依赖（Web、JPA、MySQL 等）
+7. 选择项目存放目录
+```
+
+### 2B.3 VSCode 中的 Spring Boot 功能
+
+```
+1. application.yml 属性补全（需要 Spring Boot Tools）
+2. @RequestMapping 导航（Ctrl/Cmd + 点击）
+3. Bean 依赖查看
+4. Spring Boot Dashboard 一键启动/停止
+5. Live Reload 支持
 ```
 
 ## 三、Spring Boot DevTools

@@ -7,13 +7,13 @@
 | 快捷键（macOS） | 快捷键（Windows） | 功能 |
 |----------------|------------------|------|
 | Cmd + D | Ctrl + D | 复制当前行 |
-| Cmd + Y | Ctrl + Y | 删除当前行 |
+| Cmd + Delete | Ctrl + Y | 删除当前行 |
 | Cmd + / | Ctrl + / | 行注释 |
 | Cmd + Shift + / | Ctrl + Shift + / | 块注释 |
 | Cmd + Alt + L | Ctrl + Alt + L | 格式化代码 |
 | Cmd + Alt + I | Ctrl + Alt + I | 自动缩进 |
 | Cmd + Shift + Enter | Ctrl + Shift + Enter | 补全语句 |
-| Cmd + Delete | Ctrl + Y | 删除到行首 |
+| Cmd + Backspace | Ctrl + Backspace | 删除到行首 |
 | Cmd + Shift + J | Ctrl + Shift + J | 合并行 |
 
 ### 1.2 导航
@@ -47,10 +47,8 @@
 
 | 快捷键（macOS） | 快捷键（Windows） | 功能 |
 |----------------|------------------|------|
-| Ctrl + R | Ctrl + R | 运行 |
-| Ctrl + D | Ctrl + D | 调试 |
-| Shift + F10 | Shift + F10 | 运行当前 |
-| Shift + F9 | Shift + F9 | 调试当前 |
+| Ctrl + R | Shift + F10 | 运行 |
+| Ctrl + D | Shift + F9 | 调试 |
 | F8 | F8 | 单步跳过 |
 | F7 | F7 | 单步进入 |
 | Shift + F8 | Shift + F8 | 单步跳出 |
@@ -124,7 +122,7 @@ Implement Methods - 实现接口方法
 <dependency>
     <groupId>org.projectlombok</groupId>
     <artifactId>lombok</artifactId>
-    <version>1.18.28</version>
+    <version>1.18.36</version>
     <scope>provided</scope>
 </dependency>
 
@@ -245,9 +243,55 @@ Free MyBatis Plugin - MyBatis 映射
 String Manipulation - 字符串处理
 ```
 
-## 八、项目配置
+### 7.4 AI 辅助编码
 
-### 8.1 JDK 配置
+```
+GitHub Copilot - AI 代码补全与生成（付费订阅）
+JetBrains AI Assistant - JetBrains 官方 AI 助手（付费订阅）
+Codeium - AI 代码补全（免费版可用）
+```
+
+### 7.5 版本差异提醒
+
+> **IDEA Community（免费）** 不支持 Spring、JavaEE、数据库工具等企业功能。
+> 开发 Spring Boot 项目建议使用 **IDEA Ultimate（付费）** 或 **VSCode + Spring Boot Extension Pack（免费）**。
+
+| 功能 | Community | Ultimate |
+|------|-----------|----------|
+| Java SE 开发 | ✅ | ✅ |
+| Spring Boot 支持 | ❌ | ✅ |
+| 数据库工具 | ❌ | ✅ |
+| Docker 管理 | ❌ | ✅ |
+| HTTP 客户端 | ❌ | ✅ |
+| Endpoints 面板 | ❌ | ✅ |
+| 框架特定重构 | ❌ | ✅ |
+
+## 八、内置工具
+
+### 8.1 Docker 集成（Ultimate）
+
+```
+1. View → Tool Windows → Services（Alt + 8）
+2. 连接 Docker 守护进程
+3. 管理镜像：拉取、构建、删除
+4. 管理容器：启动、停止、查看日志
+5. Docker Compose 支持：一键启动多容器
+```
+
+### 8.2 数据库工具（Ultimate）
+
+```
+1. View → Tool Windows → Database
+2. 添加数据源（MySQL、PostgreSQL、H2 等）
+3. SQL 控制台：编写和执行 SQL
+4. 表结构浏览和编辑
+5. 数据导出/导入
+6. ER 图生成
+```
+
+## 九、项目配置
+
+### 9.1 JDK 配置
 
 ```
 1. File → Project Structure → Project
@@ -255,7 +299,7 @@ String Manipulation - 字符串处理
 3. 选择 Project language level
 ```
 
-### 8.2 Maven 配置
+### 9.2 Maven 配置
 
 ```
 1. File → Settings → Build → Build Tools → Maven
@@ -264,7 +308,7 @@ String Manipulation - 字符串处理
 4. 设置 Local repository
 ```
 
-### 8.3 编码配置
+### 9.3 编码配置
 
 ```
 1. File → Settings → Editor → File Encodings
@@ -273,9 +317,9 @@ String Manipulation - 字符串处理
 4. 设置 Default encoding for properties files: UTF-8
 ```
 
-## 九、综合技巧
+## 十、综合技巧
 
-### 9.1 多光标编辑
+### 10.1 多光标编辑
 
 ```
 Alt + 点击 - 添加光标
@@ -284,7 +328,7 @@ Alt + Shift + J - 选择所有匹配
 Shift + Alt + 拖拽 - 矩形选择
 ```
 
-### 9.2 快速搜索
+### 10.2 快速搜索
 
 ```
 双击 Shift - 搜索任意内容
@@ -293,7 +337,7 @@ Cmd + E - 最近文件
 Cmd + Shift + E - 最近修改
 ```
 
-### 9.3 窗口管理
+### 10.3 窗口管理
 
 ```
 Cmd + W - 切换编辑器标签
@@ -302,7 +346,7 @@ Cmd + 1-9 - 切换工具窗口
 Shift + Escape - 隐藏/显示活动窗口
 ```
 
-### 9.4 性能优化
+### 10.4 性能优化
 
 ```
 1. 增加内存：Help → Edit Custom VM Options
@@ -314,7 +358,7 @@ Shift + Escape - 隐藏/显示活动窗口
 4. 使用 Power Save Mode
 ```
 
-## 十、小结
+## 十一、小结
 
 1. **快捷键**：编辑、导航、重构、调试
 2. **代码模板**：Live Templates、自定义模板
@@ -322,5 +366,6 @@ Shift + Escape - 隐藏/显示活动窗口
 4. **调试技巧**：断点、单步、监视
 5. **重构**：安全重构、代码优化
 6. **版本控制**：Git 集成
-7. **插件**：Lombok、MyBatisX、代码规范
-8. **配置**：JDK、Maven、编码
+7. **插件**：Lombok、MyBatisX、AI 辅助、代码规范
+8. **内置工具**：Docker、数据库（Ultimate）
+9. **配置**：JDK、Maven、编码
