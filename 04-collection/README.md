@@ -4,14 +4,14 @@
 
 ## 章节列表
 
-| 章节 | 目录 | 主题 |
-|------|------|------|
-| 第 17 章 | ch17-collection-overview | 集合框架概述：集合体系结构、Collection 接口、泛型基础 |
-| 第 18 章 | ch18-list | List 集合：ArrayList 详解与源码分析、LinkedList、Vector、遍历方式 |
-| 第 19 章 | ch19-set | Set 集合：HashSet 详解、LinkedHashSet、TreeSet 与 Comparable、哈希表原理 |
-| 第 20 章 | ch20-map | Map 集合：HashMap 详解与源码分析、LinkedHashMap、TreeMap、遍历方式 |
-| 第 21 章 | ch21-collections | Collections 工具类：集合排序、二分查找、同步集合、常用操作 |
-| 第 22 章 | ch22-advanced | 高级集合特性：泛型进阶、不可变集合（Java 9+）、集合性能对比与选型 |
+| 目录 | 主题 |
+|------|------|
+| 01-collection-overview | 集合框架概述：集合体系结构、Collection 接口、泛型基础 |
+| 02-list | List 集合：ArrayList 详解与遍历、LinkedList 与栈队列操作 |
+| 03-set | Set 集合：HashSet 去重原理、LinkedHashSet、TreeSet 排序与范围查询 |
+| 04-map | Map 集合：HashMap 详解与原理、LinkedHashMap 与 TreeMap |
+| 05-collections | Collections 工具类：排序与查找、不可变集合与同步集合 |
+| 06-advanced | 泛型进阶：泛型类与方法、通配符与类型擦除 |
 
 ## 学习目标
 
