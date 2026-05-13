@@ -19,3 +19,8 @@ dist/
 *.swo
 *~
 .DS_Store
+
+# VitePress
+node_modules/
+.vitepress/cache/
+.vitepress/dist/

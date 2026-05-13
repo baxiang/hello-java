@@ -1,4 +1,4 @@
-# 19.2 TreeSet：有序唯一集合（生活类比：自动排序的书架）
+# TreeSet
 
 ## 一、先问一个问题
 
@@ -114,4 +114,3 @@ A：元素没有实现 Comparable，且 TreeSet 没有提供 Comparator。两者
 | subSet(from, to) | 范围查询 [from, to) |
 | headSet(e)/tailSet(e) | < e / >= e 的子集 |
 | descendingSet() | 反转视图 |
-

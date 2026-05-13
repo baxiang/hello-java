@@ -1,4 +1,4 @@
-# 20.2 LinkedHashMap 与 TreeMap：有序 Map（生活类比：时间轴 vs 排行榜）
+# LinkedHashMap与TreeMap
 
 ## 一、先问一个问题
 
@@ -146,4 +146,3 @@ A：用 `Collections.synchronizedMap` 包装 LinkedHashMap，或使用 Caffeine/
 | HashMap | 无序 | O(1) | 通用 |
 | LinkedHashMap | 插入/访问顺序 | O(1) | 保持顺序、LRU |
 | TreeMap | key 排序 | O(log n) | 排序、范围查询 |
-

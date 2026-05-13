@@ -1,4 +1,4 @@
-# 18.2 LinkedList：双向链表（生活类比：手拉手排队）
+# LinkedList
 
 ## 一、先问一个问题
 
@@ -114,4 +114,3 @@ A：推荐 `ArrayDeque`，基于循环数组，既可做栈也可做队列，性
 | 栈 | push/pop/peek | 后进先出 |
 | 队列 | offer/poll/peek | 先进先出 |
 | 双端队列 | addFirst/addLast/removeFirst/removeLast | 两端操作 |
-

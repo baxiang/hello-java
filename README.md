@@ -17,7 +17,6 @@ Java 基础 → 面向对象 → 集合框架 → 多线程并发 → Web 开发
 ```
 hello-java/
 ├── README.md                      # 本文件
-├── Java 学习路线大纲.md            # 完整学习大纲
 ├── 01-java-base/                  # Java 基础语法
 ├── 02-oop/                        # 面向对象编程
 ├── 03-core-api/                   # 核心 API、异常处理与 IO
