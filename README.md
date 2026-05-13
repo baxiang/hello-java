@@ -18,23 +18,23 @@ Java 基础 → 面向对象 → 集合框架 → 多线程并发 → Web 开发
 hello-java/
 ├── README.md                      # 本文件
 ├── Java 学习路线大纲.md            # 完整学习大纲
-├── 01-java-base/                  # Java 基基础语法
+├── 01-java-base/                  # Java 基础语法
 ├── 02-oop/                        # 面向对象编程
 ├── 03-core-api/                   # 核心 API、异常处理与 IO
 ├── 04-collection/                 # 集合框架
 ├── 05-concurrency/                # 多线程与并发
 ├── 06-java8+/                     # Java 8+ 新特性
-├── 07-tools/                      # 开发工具与构建
-├── 08-web-backend/                # 数据库与 Web 后端
-├── 09-spring-ecosystem/           # Spring 生态（Framework + Boot）
-├── 10-spring-cloud/               # Spring Cloud 微服务
-├── 11-project/                    # 项目实战
-└── 12-spring-ai/                  # Spring AI 集成
+├── 07-web-backend/                # 数据库与 Web 后端
+├── 08-spring-ecosystem/           # Spring 生态（Framework + Boot）
+├── 09-spring-cloud/               # Spring Cloud 微服务
+├── 10-project/                    # 项目实战
+├── 11-spring-ai/                  # Spring AI 集成
+└── appendix-tools/                # 附录：开发工具（Maven/Git/IDEA）
 ```
 
 ## 📋 课程大纲
 
-### ✅ 已完成部分（12/12 部分）
+### ✅ 已完成部分（11/11 部分）
 
 #### 01 Java 基础语法（01-java-base）✅
 - 01-intro：Java 入门（5 节）
@@ -72,13 +72,10 @@ hello-java/
 - 04-date-module-gc：日期时间、模块化、GC 改进
 - 05-advanced：最佳实践、Virtual Threads、模式匹配、结构化并发
 
-#### 07 开发工具与构建（07-tools）✅
-- Maven、Git 版本控制、IDEA 高级技巧、VSCode、Spring Boot 开发环境
-
-#### 08 数据库与 Web 后端（08-web-backend）✅
+#### 07 数据库与 Web 后端（07-web-backend）✅
 - MySQL 基础、JDBC、前端基础、Servlet、Tomcat 服务器
 
-#### 09 Spring 生态（09-spring-ecosystem）✅
+#### 08 Spring 生态（08-spring-ecosystem）✅
 - 01-spring-framework：Spring IoC
 - 02-spring-mvc：Spring MVC（6 节）
 - 03-source-code：Spring 源码解读
@@ -94,10 +91,10 @@ hello-java/
 - 13-deploy：部署与监控
 - 14-native：Native 编译
 
-#### 10 Spring Cloud 微服务（10-spring-cloud）✅
+#### 09 Spring Cloud 微服务（09-spring-cloud）✅
 - 微服务架构概述、服务注册发现、负载均衡、服务调用、服务熔断、API 网关、配置中心、链路追踪、消息驱动、分布式事务
 
-#### 11 项目实战（11-project）✅
+#### 10 项目实战（10-project）✅
 - 01-blog：博客系统
 - 02-mall：在线商城系统
 - 03-oa：企业级 OA 系统
@@ -110,8 +107,11 @@ hello-java/
 - 10-devops：DevOps 与部署
 - 11-minispring：Mini-Spring 项目
 
-#### 12 Spring AI 集成（12-spring-ai）✅
+#### 11 Spring AI 集成（11-spring-ai）✅
 - SpringAI 简介、LLM 模型集成、Prompt 工程、RAG 架构、向量数据库、Function Calling、AI 智能客服实战
+
+### 📎 附录：开发工具（appendix-tools）
+- Maven、Git 版本控制、IDEA 高级技巧、VSCode、Spring Boot 开发环境
 
 
 ## 🎯 学习建议
@@ -126,7 +126,7 @@ hello-java/
 
 本教程涵盖 Java 开发的完整知识体系，从基础语法到 Spring Cloud 微服务架构，包含 8 个实战项目和 Spring AI 集成。
 
-**总计**：12 部分，全部完成！
+**总计**：11 部分 + 附录，全部完成！
 
 | 部分 | 内容 | 状态 |
 |------|------|------|
@@ -136,12 +136,12 @@ hello-java/
 | 04 集合框架 | List、Set、Map、泛型 | ✅ |
 | 05 多线程与并发 | 线程安全、线程池、并发工具、原子类 | ✅ |
 | 06 Java 8+ 新特性 | Lambda、Stream、版本新特性、虚拟线程 | ✅ |
-| 07 开发工具 | Maven、Git、IDEA | ✅ |
-| 08 数据库与 Web 后端 | MySQL、JDBC、Servlet、Tomcat | ✅ |
-| 09 Spring 生态 | Spring Framework + Boot 全栈 | ✅ |
-| 10 Spring Cloud | Nacos、Gateway、Sentinel、Seata | ✅ |
-| 11 项目实战 | 博客、商城、秒杀、Mini-Spring 等 | ✅ |
-| 12 Spring AI | LLM 集成、RAG、向量数据库 | ✅ |
+| 07 数据库与 Web 后端 | MySQL、JDBC、Servlet、Tomcat | ✅ |
+| 08 Spring 生态 | Spring Framework + Boot 全栈 | ✅ |
+| 09 Spring Cloud | Nacos、Gateway、Sentinel、Seata | ✅ |
+| 10 项目实战 | 博客、商城、秒杀、Mini-Spring 等 | ✅ |
+| 11 Spring AI | LLM 集成、RAG、向量数据库 | ✅ |
+| 📎 附录 | Maven、Git、IDEA | ✅ |
 
 仓库地址：https://github.com/baxiang/hello-java
 

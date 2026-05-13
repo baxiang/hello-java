@@ -5,7 +5,7 @@
 ## 仓库性质
 
 - **中文 Java 教程文档集合**，不含任何可编译/运行的源代码
-- 所有内容为 `.md` 文件，按 12 个学习模块组织在编号目录中（`01-java-base/` ~ `12-spring-ai/`）
+- 所有内容为 `.md` 文件，按 11 个学习模块组织在编号目录中（`01-java-base/` ~ `11-spring-ai/`），另有 `appendix-tools/` 附录
 
 ## 目录结构约定
 
@@ -39,12 +39,12 @@ NN-topic/                    ← 模块目录，NN 为两位序号
 | `04-collection/` | 集合框架 |
 | `05-concurrency/` | 多线程与并发 |
 | `06-java8+/` | Java 8+ 新特性 |
-| `07-tools/` | 开发工具（Maven/Git/IDEA） |
-| `08-web-backend/` | 数据库、JDBC 与 Web 后端 |
-| `09-spring-ecosystem/` | Spring 生态（Framework + Boot） |
-| `10-spring-cloud/` | Spring Cloud 微服务 |
-| `11-project/` | 项目实战 |
-| `12-spring-ai/` | Spring AI 集成 |
+| `07-web-backend/` | 数据库、JDBC 与 Web 后端 |
+| `08-spring-ecosystem/` | Spring 生态（Framework + Boot） |
+| `09-spring-cloud/` | Spring Cloud 微服务 |
+| `10-project/` | 项目实战 |
+| `11-spring-ai/` | Spring AI 集成 |
+| `appendix-tools/` | 附录：开发工具（Maven/Git/IDEA） |
 
 ## 关键文件
 
