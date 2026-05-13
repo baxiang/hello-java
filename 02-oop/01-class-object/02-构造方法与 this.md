@@ -36,6 +36,8 @@ public class Student {
 
 **三个特征**：① 方法名 = 类名；② 无返回值（连 void 都没有）；③ `new` 时自动调用。
 
+> **类比**：构造方法就像工厂流水线的**初始化工位**——产品出厂前必须经过这一步，把零件装好才能交付。不经过初始化工位的产品是不完整的。
+
 ### 2.2 this 的含义
 
 `this` 代表**当前对象**——谁调用方法，谁就是当前对象。
@@ -46,6 +48,10 @@ public Student(String name, int age) {
     this.age = age;
 }
 ```
+
+### 2.3 为什么构造方法不能继承
+
+构造方法的作用是初始化**当前类**的字段。子类有自己的字段需要初始化，强行继承父类构造会导致子类字段漏初始化。因此 Java 规定构造方法不属于类的成员，不参与继承。
 
 ## 三、代码对比
 
@@ -73,7 +79,6 @@ public Student(String name, int age) {
 public class Student {
     public Student(String name) { } // 只有有参构造
 }
-
 Student s = new Student(); // ❌ 编译错误：无参构造不存在了
 ```
 
@@ -154,10 +159,12 @@ class Builder {
         this.age = age;
         return this;
     }
+    public Student build() {
+        return new Student(name, age); // 链式终点：构建目标对象
+    }
 }
 
-// 链式调用
-new Builder().name("张三").age(18);
+Student s = new Builder().name("张三").age(18).build(); // 终点
 ```
 
 ### 4.6 静态方法不能用 this
@@ -191,4 +198,5 @@ A：可以写 `return;`，但不能返回值（因为没有返回类型）。
 | 默认构造 | 手动写了构造后不再自动提供 |
 | this.成员变量 | 区分同名成员变量和参数 |
 | this() | 调用同类其他构造，必须在第一行 |
+| 链式调用 | return this 实现，build() 方法作为终点 |
 | 静态方法 | 不能使用 this（无当前对象） |
